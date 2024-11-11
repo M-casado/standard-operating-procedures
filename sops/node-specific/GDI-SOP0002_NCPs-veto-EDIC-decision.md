@@ -82,6 +82,13 @@ Depending on the response that you receive from these authorities and data holde
    - If veto is not exercised in the response you receive, let the 1+MG DAC know and move to **step 4**
    - If **veto is exercised** in the response you receive, move to **step 2**.
 
+#### 2.1 Communicate justification of veto
+| Step identifier | When                           | Who       |
+|:----------------|:-------------------------------|:----------|
+| 2.1               | After step 1 and within 1 working day  | NCP       |
+
+You have to contact Elisavet from NBIS at elisa-..
+
 #### 2. Communicate justification of veto
 | Step identifier | When                           | Who       |
 |:----------------|:-------------------------------|:----------|
