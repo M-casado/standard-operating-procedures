@@ -68,7 +68,7 @@ See the qualifications and responsibilities of the roles in the [Organisational 
 | Author | Elisavet Torstensson | Task 4.3 member  | UU-NBIS |
 | Author | Mattias Strömberg | Task 4.3 member  | UU-NBIS |
 | Author | Silvia Bahena | Task 4.3 member  | EMBL-EBI |
-| Reviewer |  |  |  |
+| Reviewer | Marcos Casado Barbero  | Task 4.3 Lead | EMBL-EBI  |
 | Approver |  |  |  |
 | Authorizer |  |  |  |
 
