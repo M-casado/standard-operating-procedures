@@ -1,4 +1,4 @@
-# European GDI - SOP Node Helpdesk Ticket Classification
+# European GDI - Node Helpdesk Ticket Classification
 
 | Metadata | Value |
 |---|---|
