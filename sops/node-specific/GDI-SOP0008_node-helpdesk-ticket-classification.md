@@ -143,7 +143,7 @@ A ticket is considered **positively evaluated** if all the following criteria ar
 - < node's scope criteria 3>
 - etc
 
-Proceed to [step 2](#82--positive-evaluation---proceeding-with-the-ticket)
+Proceed to [step 2](#82--positive-evaluation---create-issue-in-node-ticket-management-system)
   
 A ticket is considered **negatively evaluated** if any of the following criteria apply:
 - < node's scope criteria 1>
@@ -151,46 +151,273 @@ A ticket is considered **negatively evaluated** if any of the following criteria
 - < node's scope criteria 3>
 - etc
 
-Proceed to [step 3](#83--negative-evaluation---closing-the-ticket)
+Proceed to [step 3](#83--negative-evaluation---create-documentation-issue-in-node-ticket-management-system)
 
-#### 8.2.  Positive Evaluation - Proceeding with the Ticket**
+#### 8.2.  Positive Evaluation - Create issue in Node Ticket Management System
 
 | Step identifier | When | Who |
 |:---|:---|:---|
 |  ``2`` | After step 1, if the evaluation is positive, and **within 7 working days**| Helpdesk officer |
 
-If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the **dedicated system** to record the ticket's arrival and document the positive evaluation. Each ticket will be assigned **four tags** from the [provided list. ](https://docs.google.com/document/d/1KTAfpV5qLH9YTs8IXZWGXe_9InQg2ID3pAxWqoULrDU/edit?tab=t.0)
+If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the dedicated system to record the ticket's arrival and document the positive evaluation. 
 
-**Tags**: Assign these four tags to each ticket:
+Proceed to [step 4](#84-assign-tags-) 
 
-1. **Type**: Specifies the type of ticket.
-
-2. **Priority**: Specifies the ticket's priority level.
-
-3. **Assignee**: Specifies who is responsible for the ticket.
-
-4. **Status**: Specifies the ticket's status (initially set to "New").
-
-#### 8.3.  Negative Evaluation - Closing the Ticket
+#### 8.3.  Negative Evaluation - Create Documentation issue in Node Ticket Management System 
 
 | Step identifier | When | Who |
 |:---|:---|:---|
 | ``3`` | After step 1, if the evaluation is negative, and **within 7 working days** | Helpdesk officer |
 
-If the ticket is out of the scope of the NHD (negative evaluation), a new issue will be created in the designated system to record the ticket's arrival and document the negative evaluation.
+If the ticket is out of the scope of the NHD (negative evaluation), a **new "documentation" issue** will be created in the dedicated system to record the ticket's arrival and document the negative evaluation.
 
-##### 8.3.1 Create a new issue in the system
-| Step identifier | When | Who |
-|:---|:---|:---|
-| ``3.1`` | After creating a new issue in the dedicated system and documenting the negative evaluation | Helpdesk officer |
+Proceed to [step 4](#841--assign-tags--) 
 
-The VHD will be informed that the issue is not within the scope of the NHD. A brief explanation for this decision will be provided.
-
-##### 8.3.2 Inform the VHD and close the ticket
+#### 8.4.  Assign Tags
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``3.2`` | After informing the VHD about the negative evaluation of the issue  | Helpdesk officer |
+| ``4`` | After creating a new issue in Node Ticket Management System | Helpdesk officer |
+
+The next step after creating the issue in the Node Ticket Management System is to assign tags. 
+
+If the evaluation of the ticket was **positive** then: 
+- Proceed to [step 4.1](#841--choose-tags-for-positive-evaluation--) 
+
+If the evaluation of the ticket was **negative** then: 
+- Proceed to step [step 4.2](#842--choose-tags-for-negative-evaluation--) 
+
+##### 8.4.1 Choose tags for positive evaluation
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.1`` | After the creation of the issue  | Helpdesk officer |
+
+Each ticket will be classified with **four tags** as described below: 
+
+1. **Type of ticket**: Specifies the type of ticket.
+
+2. **Ticket Priority**: Specifies the ticket's priority level.
+
+3. **Ticket Assignee**: Specifies who is responsible for the ticket.
+
+4. **Ticket Status**: Specifies the ticket's status (initially set to "New").
+
+
+ #### Type of ticket
+
+Based on EGA’s tag system, below is a list of tags that can be used by the node HD in the GDI to classify tickets according to **the type of ticket.** Each node will decide which of these tags to use for ticket classification in their node HD.
+
+- **UX**
+
+  - Development feedback - to be used when a user provides feedback about our tools
+
+  - Documentation improvement - to be used when a user highlights our documentation is wrong/out of date/not clear
+
+  - Interface issue - to be used when issue with web pages
+
+* **JIRA & Datasubs**
+
+  - JIRA - when you need to create a JIRA ticket for an issue that HD cannot resolve
+
+- **Submission**
+
+  - API - Submission - to be used when a submitter is using the submission API
+
+  - Data deposition - user submitting data
+
+  - Data deposition intention - to be used when initial submission request comes in 
+
+  - Data deposition policy documents - to be used when users query if their DAA (Data Access Agreement)  is OK or ask questions about DAA.
+
+  - Post release change - to be used when user wants to update submission objects
+
+  - Data deposition problem - user having problems with data deposition
+
+  - Data deposition question - general question about submission (i.e., not a problem but a question like “do you take X data type”)
+
+  - Uploader issue - use when user is having issue with Aspera or FTP upload
+
+  - Encryption Issue - user needs advice on file encryption
+
+  - Large submission - to be used if submission is over 10TB
+
+  - Missing study/dataset on live - to be used when user highlights study/dataset is published but not released
+
+  - Phenotype data - to be used for phenotype data submission
+
+  - Priority submission - use in conjunction with consortium from tags further down
+
+  - Publication ID query - use for when people are asking how to generate accession IDs for journal
+
+  - Study/dataset release - releasing a study/dataset to live site
+
+  - Programmatic Submission problem - to be used with programmatic submitters who are having issues with their XML
+
+  - Submitter portal issue - to be used when there is issue with SP
+
+  - JSON submission issue
+
+* **Submission Type**
+
+  - AF processing issue - HD unable to process AF due to commands not working i.e., requires a developer to change code
+
+  - AF processing template - user not completed the AF template correctly
+
+- **User** 
+
+  - Data query - to be used when a user has a specific question about the data 
+
+  - General question - general questions about EGA e.g., “where are you based?”
+
+  - Non - user data request - user that does not have access to a dataset and needs to be told how to access. 
+
+  - Password issue - user having an issue with their password
+
+  - User account
+
+- **Distribution**
+
+  - File issues - to be used for “truncated files” which could have been submitted truncated or are truncated due to error in download. Also missing files from a dataset
+
+  - Metadata issues - users asking further info on metadata e.g., trying to understand how it links, asking if more data available
+
+  - Metadata query - user asking how to download metadata or asking for AF metadata
+
+    - **Distribution\_Download\_Account**
+
+       - Datasets/files request not in client -  used for files not available with the download tool
+
+       - Alternative Download - to be used when a user cannot download using any of our download tools
+
+    - **Distribution Keys**
+
+       - Key request
+
+    - **Distribution\_Download\_Client**
+
+       - API Download - to be used 
+
+       - Dataset/file requesting issues
+
+       - Decryption/unzipping problems
+
+       - Download streamer
+
+       - Download streamer 500
+
+       - Download streamer issues
+
+       - Firewall issues
+
+       - Log in problems
+
+       - Null/Sleeping timeout errors
+
+       - Download client issues
+
+       - User error
+    
+       - Version issue
+
+- **DAC** 
+
+  - DAC tool query - to be used when DAC is having issues with tools 
+
+  - DAC curation - to  be used when we do DAC curation, and update DACs for DACs i.e., change DAC members
+
+  - Update DAC - use for contact and detail changes
+
+  - DAC referred - to be used when we have to point a user back to a DAC e.g., they say they have been granted access but we can’t see that they have
+
+  - DAC request to create account - DAC requesting to creating a user account
+
+* **Archiving**
+
+  - Data deposition - Archiving issue
+
+  - Archiving state - file is still processing somewhere
+
+  - Failed state - file has failed to archive
+
+  - Tags for different files status 
+
+- **External Comms**
+
+  - Journal communications - to be used when in communication with Journals
+
+* **Security**
+
+  - EGA security issues - to be used if there is a security breach
+
+
+- **Delete**
+
+  - Non - issue - to be used when user has submitted a ticket with an issue, and then replied to the ticket saying “all ok after all” before we have had chance to reply
+
+  - Spam
+
+* **Consortium**
+
+  - Tags for different consortiums
+ 
+- **Out-of-scope**
+  - Issues that are out-of-scope of the nodes' helpdesk  
+
+#### Ticket priority
+
+We propose the use of three priority levels as listed below. However, each node might decide to use other levels.
+
+- **Low** - suitable for tickets that are expected to be resolved quickly and which are of routine character
+
+- **Medium** - suitable for tickets that are more complicated and might take longer time to resolve
+
+- **High** - suitable for tickets that need to be handled immediately, e.g. security breaches
+
+#### Ticket assignee
+
+Name of node helpdesk officer assigned to the ticket.
+
+#### Ticket status
+
+We propose the use of the model listed below. However, each node might decide to use another model.
+
+- **New** - ticket that has not yet been started to be resolved
+
+- **In progress** (or opened) - ticket in the stage of being resolved
+
+- **Resolved** - ticket that has been resolved and returned to the VHD
+
+- **Blocked** - ticket that is unable to proceed with at the moment due to e.g. external dependencies
+
+- **Deleted** - ticket that is archived e.g. since it is out of scope of the node HD
+
+##### 8.4.2 Choose tags for negative evaluation
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.2`` | After the creation of documentation issue due to negative evaluation | Helpdesk officer |
+
+When the ticket was evaluated negatively then, you will choose the following tags: 
+-  **Type of ticket**: out-of-scope 
+-  **Ticket assignee**: choose from the list the name of the assigned HD member 
+-  **Ticket Status**: Deleted 
+
+#### 8.5. Follow NHD SOP for Ticket Handling 
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``5`` | After assigning tags | Helpdesk officer |
+
+The assigned HD member will follow another **SOP for Ticket handling** 
+- If the ticket has a **positive evaluation**, then proceed to ...
+- If the ticket has a **negative evaluation**, then proceed to ...
+
+
+##### 8.6. Inform the VHD of Ticket Resolution 
+
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``6`` | After handling the ticket  | Helpdesk officer |
+
+The VHD will be informed about the ticket resolution. In case the issue is not within the scope of the NHD a brief explanation for this decision will be provided.
 
 The ticket will be closed in the node’s ticketing system, with a clear note stating why the ticket was closed.
 
