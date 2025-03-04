@@ -80,7 +80,7 @@ The purpose of this Standard Operating Procedure (SOP) is to provide clear guide
 
 ### 5. Scope
 
-This SOP outlines the process for classifying tickets at the **node level** received from the Virtual Helpdesk (VHD) using a classification model and registering them in the node's internal ticket management system. The SOP covers all steps, from the reference of the ticket from the VHD to its categorisation of a corresponding issue in the dedicated system.
+This SOP outlines the process for classifying tickets, at the **node level**, that were received from the Virtual Helpdesk (VHD). The approach is to use a classification model and register the tickets in the node's internal ticket management system. This SOP covers the steps between the initial reference of the ticket from the VHD, to its categorisation as a corresponding issue in the dedicated system.
 
 ### 6. Introduction and Background Information
 
