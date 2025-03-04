@@ -124,6 +124,7 @@ flowchart TD
     end
     E -->|Update VHD on Ticket Resolution| Virtual_Helpdesk
     F -->|Inform VHD of Out-of-Scope Decision| Virtual_Helpdesk
+````
 
 
 ### 8. Procedure
