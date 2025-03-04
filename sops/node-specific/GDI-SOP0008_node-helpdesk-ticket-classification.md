@@ -131,7 +131,7 @@ A ticket is considered **positively evaluated** if all the following criteria ar
 - < node's scope criteria 3>
 - etc
 
-Proceed to [step 2](#82-positive-evaluation-proceeding-with-the-ticket) 
+Proceed to [step 2](#82--positive-evaluation---proceeding-with-the-ticket)
   
 A ticket is considered **negatively evaluated** if any of the following criteria apply:
 - < node's scope criteria 1>
@@ -139,7 +139,7 @@ A ticket is considered **negatively evaluated** if any of the following criteria
 - < node's scope criteria 3>
 - etc
 
-Proceed to [step 3](#83-negative-evaluation-closing-the-ticket)
+Proceed to [step 3](#83--negative-evaluation---closing-the-ticket)
 
 #### 8.2.  Positive Evaluation - Proceeding with the Ticket**
 
