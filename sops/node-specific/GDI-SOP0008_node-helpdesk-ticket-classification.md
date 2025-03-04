@@ -106,14 +106,25 @@ This is a proposed workflow for how the ticket will be classified at the Node le
 
 ````mermaid
 flowchart TD
-A[Receive Ticket from VHD] --> B{Evaluate Ticket Scope}
-B -->|Positive Evaluation| C[Create New Issue in Node Ticket Management System]
-C --> D[Assign Tags to Ticket
-Tags: 1.Type 2.Priority 3.Assignee 4.Status]
-D --> E[Follow SOP for NHD Ticket Handling]
-B -->|Negative Evaluation| G[Create New Issue in Node Ticket Management System for Documentation]
-G --> H[Inform VHD of Out-of-Scope Decision, Provide Explanation and Close Issue with Notes]
-````
+    subgraph Virtual_Helpdesk
+        A[Ticket]
+    end
+    subgraph Node_Helpdesk
+        A -->|Receive Ticket from VHD| B{Evaluate
+                                        Ticket Scope}
+        subgraph Ticket Management System
+            C[Create Issue in Node Ticket Management System]
+            F[Create 'Documentation' Issue in Node Ticket Management System]
+        end                                        
+        B -->|Positive Evaluation| C
+        C --> D[Assign Tags: Type, Priority, Assignee, Status]
+        D --> E[Follow NHD SOP for Ticket Handling]
+        B -->|Negative Evaluation| F
+        F --> D
+    end
+    E -->|Update VHD on Ticket Resolution| Virtual_Helpdesk
+    F -->|Inform VHD of Out-of-Scope Decision| Virtual_Helpdesk
+
 
 ### 8. Procedure
 
