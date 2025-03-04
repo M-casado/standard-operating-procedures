@@ -179,7 +179,7 @@ Proceed to [step 4](#84-assign-tags)
 |:---|:---|:---|
 | ``4`` | After creating a new issue in Node Ticket Management System | Helpdesk officer |
 
-The next step after creating the issue in the Node Ticket Management System is to assign tags. 
+The next step after creating the issue in the Node Ticket Management System is to **assign tags**. 
 
 If the evaluation of the ticket was **positive** then: 
 - Proceed to [step 4.1](#841-choose-tags-for-positive-evaluation).
