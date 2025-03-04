@@ -411,7 +411,7 @@ The assigned HD member will follow another **SOP for Ticket handling**
 - If the ticket has a **negative evaluation**, then proceed to ...
 
 
-##### 8.6. Inform the VHD of Ticket Resolution 
+#### 8.6. Inform the VHD of Ticket Resolution 
 
 | Step identifier | When | Who |
 |:---|:---|:---|
