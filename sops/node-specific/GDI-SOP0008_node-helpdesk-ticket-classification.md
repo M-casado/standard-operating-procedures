@@ -121,9 +121,9 @@ G --> H[Inform VHD of Out-of-Scope Decision, Provide Explanation and Close Issue
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``1`` | After receiving a ticket from the VHD within xx working days | Helpdesk officer  |
+| ``1`` | After receiving a ticket from the VHD and **within 7 working days** | Helpdesk officer  |
 
-The NHD receives a ticket from the VHD requiring action by the specific node. The ticket is evaluated to determine whether it is **within the scope** (positive evaluation) **of the node or not** (negative evaluation).
+The NHD receives a ticket from the VHD requiring action by the specific node. The ticket is evaluated **within 7 working days** to determine whether it is **within the scope** (positive evaluation) **of the node or not** (negative evaluation).
 
 A ticket is considered **positively evaluated** if all the following criteria are met: 
 - < node's scope criteria 1>
@@ -145,9 +145,9 @@ Proceed to [step 3](#83--negative-evaluation---closing-the-ticket)
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-|  ``2`` | After step 1, if the evaluation is positive, within xx working days| Helpdesk officer |
+|  ``2`` | After step 1, if the evaluation is positive, and **within 7 working days**| Helpdesk officer |
 
-If the ticket is within the scope of the NHD, a **new issue** will be created in the **dedicated system** to record the ticket's arrival and document the positive evaluation. Each ticket will be assigned **four tags** from the [provided list. ](https://docs.google.com/document/d/1KTAfpV5qLH9YTs8IXZWGXe_9InQg2ID3pAxWqoULrDU/edit?tab=t.0)
+If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the **dedicated system** to record the ticket's arrival and document the positive evaluation. Each ticket will be assigned **four tags** from the [provided list. ](https://docs.google.com/document/d/1KTAfpV5qLH9YTs8IXZWGXe_9InQg2ID3pAxWqoULrDU/edit?tab=t.0)
 
 **Tags**: Assign these four tags to each ticket:
 
@@ -163,9 +163,9 @@ If the ticket is within the scope of the NHD, a **new issue** will be created in
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``3`` | After step 1, if the evaluation is negative, within xx working days | Helpdesk officer |
+| ``3`` | After step 1, if the evaluation is negative, and **within 7 working days** | Helpdesk officer |
 
-If the ticket is out of the scope of the NHD, a new issue will be created in the designated system to record the ticket's arrival and document the negative evaluation.
+If the ticket is out of the scope of the NHD (negative evaluation), a new issue will be created in the designated system to record the ticket's arrival and document the negative evaluation.
 
 ##### 8.3.1 Create a new issue in the system
 | Step identifier | When | Who |
