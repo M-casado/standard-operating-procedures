@@ -122,8 +122,8 @@ flowchart TD
         B -->|Negative Evaluation| F
         F --> D
     end
-    E -->|Update VHD on Ticket Resolution| Virtual_Helpdesk
-    F -->|Inform VHD of Out-of-Scope Decision| Virtual_Helpdesk
+    E -->|Notify VHD of ticket resolution; for negative evaluations, inform them it’s out-of-scope.| Virtual_Helpdesk
+   
 ````
 
 
