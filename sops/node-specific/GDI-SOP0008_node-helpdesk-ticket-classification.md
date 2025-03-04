@@ -161,7 +161,7 @@ Proceed to [step 3](#83--negative-evaluation---create-documentation-issue-in-nod
 
 If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the dedicated system to record the ticket's arrival and document the positive evaluation. 
 
-Proceed to [step 4](#84-assign-tags-) 
+Proceed to [step 4](#84-assign-tags).
 
 #### 8.3.  Negative Evaluation - Create Documentation issue in Node Ticket Management System 
 
@@ -171,7 +171,7 @@ Proceed to [step 4](#84-assign-tags-)
 
 If the ticket is out of the scope of the NHD (negative evaluation), a **new "documentation" issue** will be created in the dedicated system to record the ticket's arrival and document the negative evaluation.
 
-Proceed to [step 4](#841--assign-tags--) 
+Proceed to [step 4](#84-assign-tags).
 
 #### 8.4.  Assign Tags
 
@@ -182,10 +182,10 @@ Proceed to [step 4](#841--assign-tags--)
 The next step after creating the issue in the Node Ticket Management System is to assign tags. 
 
 If the evaluation of the ticket was **positive** then: 
-- Proceed to [step 4.1](#841--choose-tags-for-positive-evaluation--) 
+- Proceed to [step 4.1](#841-choose-tags-for-positive-evaluation).
 
 If the evaluation of the ticket was **negative** then: 
-- Proceed to step [step 4.2](#842--choose-tags-for-negative-evaluation--) 
+- Proceed to step [step 4.2](#842-choose-tags-for-negative-evaluation).
 
 ##### 8.4.1 Choose tags for positive evaluation
 | Step identifier | When | Who |
