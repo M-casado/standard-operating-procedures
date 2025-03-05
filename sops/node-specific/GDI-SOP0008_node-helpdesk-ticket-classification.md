@@ -135,7 +135,7 @@ flowchart TD
 |:---|:---|:---|
 | ``1`` | After receiving a ticket from the VHD and **within 7 working days** | Helpdesk officer  |
 
-The NHD receives a ticket from the VHD requiring action by the specific node. The ticket is evaluated **within 7 working days** to determine whether it is **within the scope** (positive evaluation) **of the node or not** (negative evaluation).
+The NHD receives a ticket from the VHD requiring action by the specific node. The ticket is evaluated **within 7 working days** to determine whether it is **within the node's scope** (positive evaluation) **or not** (negative evaluation).
 
 A ticket is considered **positively evaluated** if all the following criteria are met: 
 - < node's scope criteria 1>
@@ -169,7 +169,7 @@ Proceed to [step 4](#84-assign-tags)
 |:---|:---|:---|
 | ``3`` | After step 1, if the evaluation is negative, and **within 7 working days** | Helpdesk officer |
 
-If the ticket is out of the scope of the NHD (negative evaluation), a **new "documentation" issue** will be created in the dedicated system to record the ticket's arrival and document the negative evaluation.
+If the ticket is out of the scope of the NHD (negative evaluation), a **new documentation issue** will be created in the dedicated system to record the ticket's arrival and document the negative evaluation.
 
 Proceed to [step 4](#84-assign-tags)
 
@@ -177,20 +177,20 @@ Proceed to [step 4](#84-assign-tags)
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``4`` | After creating a new issue in Node Ticket Management System | Helpdesk officer |
+| ``4`` | After creating a new issue or documentation issue in Node Ticket Management System | Helpdesk officer |
 
-The next step after creating the issue in the Node Ticket Management System is to **assign tags**. 
+The next step after creating the appropriate issue in the Node Ticket Management System is to **assign tags**. 
 
 If the evaluation of the ticket was **positive** then: 
 - Proceed to [step 4.1](#841-choose-tags-for-positive-evaluation).
 
 If the evaluation of the ticket was **negative** then: 
-- Proceed to step [step 4.2](#842-choose-tags-for-negative-evaluation).
+- Proceed to [step 4.2](#842-choose-tags-for-negative-evaluation).
 
 ##### 8.4.1 Choose tags for positive evaluation
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``4.1`` | After the creation of the issue  | Helpdesk officer |
+| ``4.1`` | Following the creation of the issue after a positive ticket evaluation | Helpdesk officer |
 
 Each ticket will be classified with **four tags** as described below: 
 
@@ -394,7 +394,7 @@ We propose the use of the model listed below. However, each node might decide to
 ##### 8.4.2 Choose tags for negative evaluation
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``4.2`` | After the creation of documentation issue due to negative evaluation | Helpdesk officer |
+| ``4.2`` | Following the creation of the documentation issue after a negative ticket evaluation | Helpdesk officer |
 
 When the ticket was evaluated negatively then, you will choose the following tags: 
 -  **Type of ticket**: out-of-scope 
@@ -406,18 +406,22 @@ When the ticket was evaluated negatively then, you will choose the following tag
 |:---|:---|:---|
 | ``5`` | After assigning tags | Helpdesk officer |
 
-The assigned HD member will follow another **SOP for Ticket handling** 
-- If the ticket has a **positive evaluation**, then proceed to ...
-- If the ticket has a **negative evaluation**, then proceed to ...
-
+The assigned HD member should refer to the designated **SOP for Ticket handling** 
+- If the ticket receives a **positive evaluation**, proceed to [SOP...].
+- If the ticket receives a **negative evaluation**, proceed to [SOP...].
 
 #### 8.6. Inform the VHD of Ticket Resolution 
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``6`` | After handling the ticket  | Helpdesk officer |
+| ``6`` | After the ticket handling  | Helpdesk officer |
 
-The VHD will be informed about the ticket resolution. In case the issue is not within the scope of the NHD a brief explanation for this decision will be provided.
+The VHD will be informed about the ticket resolution. 
+
+If the issue is **out of NHD's scope**, a brief explanation of this decision will be provided. You can use the following template to send an email to the VHD. 
+````
+
+````
 
 The ticket will be closed in the node’s ticketing system, with a clear note stating why the ticket was closed.
 
