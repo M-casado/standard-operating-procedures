@@ -26,6 +26,8 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | AAI              | Authentication and Authorization Infrastructure                         |
 | AE               | Associated Entity                                                       |
 | AI               | Action Item                                                             |
+| AF               | Application Form                                                        |
+| API              | Application Programming Interface                                       |
 | BEN              | Beneficiary                                                             |
 | CC               | Carbon Copy (used in communications to send a copy to others)           |
 | CSC              | Finnish IT Center for Science                                           |
@@ -39,18 +41,22 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | DPIA             | Data Protection Impact Assessment                                       |
 | EBI              | European Bioinformatics Institute                                       |
 | EDIC             | European Digital Infrastructure Consortium                              |
+| EGA              | European Genome-phenome Archive                                         |
 | ELSI             | Ethical, Legal, and Social Implications                                 |
 | EMBL             | European Molecular Biology Laboratory                                   |
+| FTP              | File Transfer Protocol                                                  |
 | GDI              | European Genomic Data Infrastructure                                    |
 | GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
 | GDPR             | General Data Protection Regulation                                      |
 | GH               | GitHub                                                                  |
 | HD               | Helpdesk                                                                |
 | HRI              | Health Research Infrastructure                                          |
+| ID               | Identity Document                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
 | ISM              | Information Service Management                                          |
 | IST              | Instituto Superior Técnico                                              |
 | IT               | Information Technology                                                  |
+| JSON             | JavaScript Object Notation                                              |
 | KT               | Knowledge Transfer                                                      |
 | LNDS             | Luxembourg National Data Service                                        |
 | LU               | Luxembourg                                                              |
@@ -59,14 +65,16 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | MS               | Milestone                                                               |
 | NBIS             | National Bioinformatics Infrastructure Sweden                           |
 | NCP              | Node Contact Point                                                      |
-| NHD              | Node Helpdesk                                                  |
+| NHD              | Node Helpdesk                                                           |
 | OC               | Operations Committee                                                    |
+| OK               | All correct                                                             |
 | ORR              | Organisational Roles and Responsibilities                               |
 | PR               | Pull Request                                                            |
 | QMS              | Quality Management System                                               |
 | RFC              | Request For Comments                                                    |
 | SDPC             | Security and Data Protection Committee                                  |
 | SLA              | Service Level Agreement                                                 |
+| SP               | Submitter Portal                                                        |
 | SOP              | Standard Operating Procedure                                            |
 | TB               | Top to Bottom                                                           |
 | TBD              | To Be Determined                                                        |
@@ -74,10 +82,12 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | UI               | User Interface                                                          |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
+| UX               | User experience                                                         |
 | VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |
+| XML              | Extensible Markup Language                                              |
 | ZH               | ZenHub                                                                  |
 
 | **Term**         | **Definition**                                                         |
