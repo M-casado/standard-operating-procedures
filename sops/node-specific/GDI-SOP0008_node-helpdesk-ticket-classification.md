@@ -418,7 +418,7 @@ The assigned HD member should refer to the designated **SOP for Ticket handling*
 
 The VHD will be informed about the ticket resolution. 
 
-If the issue is **out of NHD's scope**, a brief explanation of this decision will be provided. You can use the following template to send an email to the VHD. 
+If the issue is **out of NHD's scope**, a brief explanation of this decision will be provided. You can use the following template to send an email (by Node GDI email address) or a message through the node's dedicated system to the VHD. 
 ````
 Subject: Ticket with <issue number> Out of Scope for the <GDI node helpdesk>
 ````
