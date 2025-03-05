@@ -203,7 +203,7 @@ Each ticket will be classified with **four tags** as described below:
 4. [**Ticket Status**](#ticket-status): Specifies the ticket's status (initially set to "New").
 
 
- #### Type of ticket
+* #### Type of ticket
 
 Based on EGA’s tag system, below is a list of tags that can be used by the node HD in the GDI to classify tickets according to **the type of ticket.** Each node will decide which of these tags to use for ticket classification in their node HD.
 
@@ -211,7 +211,7 @@ Based on EGA’s tag system, below is a list of tags that can be used by the nod
 
   - Issues that are out-of-scope of the nodes' helpdesk  
 
--  **UX**
+- **UX**
 
   - Development feedback - to be used when a user provides feedback about our tools
 
@@ -365,7 +365,7 @@ Based on EGA’s tag system, below is a list of tags that can be used by the nod
   - Tags for different consortiums
  
 
-#### Ticket priority
+* #### Ticket priority
 
 We propose the use of three priority levels as listed below. However, each node might decide to use other levels.
 
@@ -375,11 +375,11 @@ We propose the use of three priority levels as listed below. However, each node 
 
 - **High** - suitable for tickets that need to be handled immediately, e.g. security breaches
 
-#### Ticket assignee
+* #### Ticket assignee
 
 Name of node helpdesk officer assigned to the ticket.
 
-#### Ticket status
+* #### Ticket status
 
 We propose the use of the model listed below. However, each node might decide to use another model.
 
