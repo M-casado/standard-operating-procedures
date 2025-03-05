@@ -177,7 +177,7 @@ Proceed to [step 4](#84-assign-tags)
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``4`` | After creating a new issue or documentation issue in Node Ticket Management System | Helpdesk officer |
+| ``4`` | After creating a new issue or documentation issue in Node Ticket Management System and **within 7 working days** | Helpdesk officer |
 
 The next step after creating the appropriate issue in the Node Ticket Management System is to **assign tags**. 
 
@@ -198,7 +198,7 @@ Each ticket will be classified with **four tags** as described below:
 
 2. [**Ticket Priority**](#ticket-priority): Specifies the ticket's priority level.
 
-3. [**Ticket Assignee**](#ticket-assignee): Specifies who is responsible for the ticket.
+3. [**Ticket Assignee**](#ticket-assignee): Specifies who is responsible for resolving the ticket.
 
 4. [**Ticket Status**](#ticket-status): Specifies the ticket's status (initially set to "New").
 
@@ -207,7 +207,11 @@ Each ticket will be classified with **four tags** as described below:
 
 Based on EGA’s tag system, below is a list of tags that can be used by the node HD in the GDI to classify tickets according to **the type of ticket.** Each node will decide which of these tags to use for ticket classification in their node HD.
 
-- **UX**
+- **Out-of-scope**
+
+  - Issues that are out-of-scope of the nodes' helpdesk  
+
+-  **UX**
 
   - Development feedback - to be used when a user provides feedback about our tools
 
@@ -360,8 +364,6 @@ Based on EGA’s tag system, below is a list of tags that can be used by the nod
 
   - Tags for different consortiums
  
-- **Out-of-scope**
-  - Issues that are out-of-scope of the nodes' helpdesk  
 
 #### Ticket priority
 
@@ -441,7 +443,6 @@ Best regards,
 
 ````
 
-The ticket will be closed in the node’s ticketing system, with a clear note stating why the ticket was closed.
 
 ### 9. References
 
