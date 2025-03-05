@@ -94,6 +94,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 |------------------|-------------------------------------------------------------------------|
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| JIRA | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
