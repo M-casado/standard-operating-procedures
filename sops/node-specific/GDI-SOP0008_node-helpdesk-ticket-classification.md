@@ -194,13 +194,13 @@ If the evaluation of the ticket was **negative** then:
 
 Each ticket will be classified with **four tags** as described below: 
 
-1. **Type of ticket**: Specifies the type of ticket.
+1. [**Type of ticket**](#type-of-ticket): Specifies the type of ticket.
 
-2. **Ticket Priority**: Specifies the ticket's priority level.
+2. [**Ticket Priority**](#ticket-priority): Specifies the ticket's priority level.
 
-3. **Ticket Assignee**: Specifies who is responsible for the ticket.
+3. [**Ticket Assignee**](#ticket-assignee): Specifies who is responsible for the ticket.
 
-4. **Ticket Status**: Specifies the ticket's status (initially set to "New").
+4. [**Ticket Status**](#ticket-status): Specifies the ticket's status (initially set to "New").
 
 
  #### Type of ticket
