@@ -159,7 +159,7 @@ Proceed to [step 3](#83--negative-evaluation---create-documentation-issue-in-nod
 |:---|:---|:---|
 |  ``2`` | After step 1, if the evaluation is positive, and **within 7 working days**| Helpdesk officer |
 
-If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the dedicated system to record the ticket's arrival and document the positive evaluation. 
+If the ticket is within the scope of the NHD (positive evaluation), a **new issue** will be created in the designated system to record the ticket's arrival and document the positive evaluation. 
 
 Proceed to [step 4](#84-assign-tags)
 
@@ -420,7 +420,26 @@ The assigned HD member should refer to the designated **SOP for Ticket handling*
 
 The VHD will be informed about the ticket resolution. 
 
-If the issue is **out of NHD's scope**, a brief explanation of this decision will be provided. You can use the following template to send an email (by Node GDI email address) or a message through the node's dedicated system to the VHD. 
+When the issue has been resolved (based on a **positive ticket evaluation**), a brief notification should be sent to the VHD. You can use the following template to send an email (by the Node GDI email address) or to communicate through the node's designated system to inform the VHD.
+
+````
+Subject: Notification of Ticket Resolution: <Issue Number>
+````
+````
+Dear <VHD Officer>,
+
+I am pleased to inform you that the referenced ticket <issue number> has been successfully resolved. All necessary actions have been completed, and the issue has been addressed as required.
+
+If there are any additional steps or further input needed from your side, please do not hesitate to let me know.
+
+Thank you for your cooperation.
+
+Best regards,  
+<Name of NHD Officer>  
+<GDI Node>
+````
+
+If the issue is **out of NHD's scope**, a brief explanation of this decision should be provided. You can use the following template to send an email (by Node GDI email address) or a message through the node's designated system to notify the VHD. 
 ````
 Subject: Ticket with <issue number> Out of Scope for the <GDI node helpdesk>
 ````
@@ -436,9 +455,7 @@ As a result, I will consider the ticket resolved and closed unless you raise any
 Please feel free to reach out if you have any concerns.
 
 Best regards,
-
 <Name of NHD officer>
-
 <GDI node>
 
 ````
