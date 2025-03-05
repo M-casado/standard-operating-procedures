@@ -41,23 +41,40 @@ Find GDI SOPs common Glossary at the [charter document](https://github.com/Genom
 
 | Abbreviation |  Description |
 |---|---|
+| AF | Application Form|
+| API | Application Programming Interface |
+| DAA | Data Access Agreement|
+| DAC | Data Access Committee|
 | EBI | European Bioinformatics Institute |
+| EGA | European Genome-phenome Archive |
 | EMBL | European Molecular Biology Laboratory |
+| FTP | File Transfer Protocol |
 | GDI | Genomic Data Infrastructure |
+| HD | Helpdesk |
+| ID | Identity Document |
 | ISM | Information Service Management |
+| JSON | JavaScript Object Notation |
 | NBIS | National Bioinformatics Infrastructure Sweden |
 | NHD | Node Helpdesk |
+| OK | All correct |
 | ORR | Organisational Roles and Responsibilities |
 | SOP | Standard Operating Procedure |
+| SP | Submitter Portal |
 | UU | University of Uppsala |
+| UX | User experience |
 | VHD | Virtual Helpdesk  |
+| XML | Extensible Markup Language  |
 
 | Term | Definition |
 |---|---|
+| API | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
+| JIRA | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
+| JSON | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk | The support team responsible for handling tickets related to data management issues associated with the node in the GDI Project. |
 | Ticket | Incoming issues from the GDI Virtual Helpdesk that are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
 | Ticket Classification | The process of categorising support requests based on their nature, so they can be assigned to the appropriate individual or team for resolution.  |
 | Virtual Helpdesk  | The initial point of contact for inquiries and requests related to data management in the GDI project. |
+| XML  | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
 
 ### 3. Roles and Responsibilities
 
