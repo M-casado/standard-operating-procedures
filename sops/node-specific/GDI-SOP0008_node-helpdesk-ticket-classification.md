@@ -420,6 +420,24 @@ The VHD will be informed about the ticket resolution.
 
 If the issue is **out of NHD's scope**, a brief explanation of this decision will be provided. You can use the following template to send an email to the VHD. 
 ````
+Subject: Ticket with <issue number> Out of Scope for the <GDI node helpdesk>
+````
+````
+Dear <VHD officer>,
+
+After careful evaluation, the  referenced ticket <issue number> has been determined to be out of scope for our node helpdesk due to the following reason(s):
+
+<Reason>
+
+As a result, I will consider the ticket resolved and closed unless you raise any objections or further input.
+
+Please feel free to reach out if you have any concerns.
+
+Best regards,
+
+<Name of NHD officer>
+
+<GDI node>
 
 ````
 
