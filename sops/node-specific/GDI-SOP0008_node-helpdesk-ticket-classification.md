@@ -441,12 +441,12 @@ The VHD will be informed about the ticket resolution.
 When the issue has been resolved (based on a **positive ticket evaluation**), a brief notification should be sent to the VHD. You can use the following template to send an email (by the Node GDI email address) or to communicate through the node's designated system to inform the VHD.
 
 ````
-Subject: Notification of Ticket Resolution: <Issue Number>
+Subject: Notification of Ticket Resolution: <VHD's ticket ID>
 ````
 ````
 Dear <VHD Officer>,
 
-I am pleased to inform you that the referenced ticket <issue number> has been successfully resolved. All necessary actions have been completed, and the issue has been addressed as required.
+I am pleased to inform you that the referenced ticket <VHD's ticket ID> has been successfully resolved. All necessary actions have been completed, and the issue has been addressed as required.
 
 If there are any additional steps or further input from your side, please do not hesitate to let me know.
 
@@ -459,14 +459,14 @@ Best regards,
 
 If the issue is **out of NHD's scope**, a brief explanation of this decision should be provided. You can use the following template to send an email (by Node GDI email address) or a message through the node's designated system to notify the VHD. 
 ````
-Subject: Ticket with <issue number> Out of Scope for the <GDI node helpdesk>
+Subject: Ticket with <VHD's ticket ID> Out of Scope for the <GDI node helpdesk>
 ````
 ````
 Dear <VHD officer>,
 
-After careful evaluation, the referenced ticket <issue number>, handled by the <assigned helpdesk>, having a <priority status> has been determined to be out of scope for our node helpdesk due to the following reason(s).
+After careful evaluation, the referenced ticket <VHD's ticket ID>, handled by the <assigned helpdesk>, having a <priority status> has been determined to be out of scope for our node helpdesk due to the following reason(s).
 
-<Reason>
+<Reason(s)>
 
 As a result, we will consider the ticket resolved and closed unless you provide any further input or raise objections. If you do provide input, we will reopen the ticket as needed.
 
