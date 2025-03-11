@@ -154,21 +154,21 @@ flowchart TD
 
 The NHD receives a ticket from the VHD requiring action by the specific node. The ticket is evaluated **within 7 working days** to determine whether it is **within the node's scope** (positive evaluation) **or not** (negative evaluation).
 
-A ticket is considered **positively evaluated** if all the following criteria are met: 
-- < node's scope criteria 1>
-- < node's scope criteria 2>
-- < node's scope criteria 3>
-- etc
+- A ticket is considered **positively evaluated** if all the following criteria are met: 
+   - ``< node's scope criteria 1>``
+   - ``< node's scope criteria 2>``
+   - ``< node's scope criteria 3>``
+   - etc
 
-Proceed to [step 2](#82--positive-evaluation---create-issue-in-node-ticket-management-system)
+   - If positively evaluated, proceed to **[step 2](#82--positive-evaluation---create-issue-in-node-ticket-management-system)**
   
-A ticket is considered **negatively evaluated** if any of the following criteria apply:
-- < node's scope criteria 1>
-- < node's scope criteria 2>
-- < node's scope criteria 3>
-- etc
+- A ticket is considered **negatively evaluated** if any of the following criteria apply:
+   - ``< node's scope criteria 1>``
+   - ``< node's scope criteria 2>``
+   - ``< node's scope criteria 3>``
+   - etc
 
-Proceed to [step 3](#83--negative-evaluation---create-documentation-issue-in-node-ticket-management-system)
+   - If negatively evaluated, proceed to **[step 3](#83--negative-evaluation---create-documentation-issue-in-node-ticket-management-system)**
 
 #### 8.2.  Positive Evaluation - Create issue in Node Ticket Management System
 
