@@ -468,7 +468,7 @@ After careful evaluation, the  referenced ticket <issue number> has been determi
 
 <Reason>
 
-As a result, I will consider the ticket resolved and closed unless you raise any objections or further input.
+As a result, we will consider the ticket resolved and closed unless you provide any further input or raise objections. If you do provide input, we will reopen the ticket as needed.
 
 Please feel free to reach out if you have any concerns.
 
