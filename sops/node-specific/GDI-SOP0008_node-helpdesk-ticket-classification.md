@@ -464,7 +464,7 @@ Subject: Ticket with <issue number> Out of Scope for the <GDI node helpdesk>
 ````
 Dear <VHD officer>,
 
-After careful evaluation, the  referenced ticket <issue number> has been determined to be out of scope for our node helpdesk due to the following reason(s):
+After careful evaluation, the referenced ticket <issue number>, handled by the <assigned helpdesk>, having a <priority status> has been determined to be out of scope for our node helpdesk due to the following reason(s).
 
 <Reason>
 
