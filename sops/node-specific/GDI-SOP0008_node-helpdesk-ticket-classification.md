@@ -71,7 +71,7 @@ Find GDI SOPs common Glossary at the [charter document](https://github.com/Genom
 | JIRA | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 | JSON | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk | The support team responsible for handling tickets related to data management issues associated with the node in the GDI Project. |
-| Ticket | Incoming issues from the GDI Virtual Helpdesk that are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
+| Ticket | A ticket is a record in a ticket management system that tracks an issue, request, or task from creation to resolution. It helps streamline communication and workflows within teams or organizations.|
 | Ticket Classification | The process of categorising support requests based on their nature, so they can be assigned to the appropriate individual or team for resolution.  |
 | Virtual Helpdesk  | The initial point of contact for inquiries and requests related to data management in the GDI project. |
 | XML  | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
