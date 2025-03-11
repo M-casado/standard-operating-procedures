@@ -382,7 +382,7 @@ Based on EGA’s tag system, below is a list of tags that can be used by the nod
 
   - Tags for different consortiums
  
-###### 8.4.1.2  Ticket priority
+###### 8.4.1.2 Ticket priority
 
 We propose the use of three priority levels as listed below. However, each node might decide to use other levels.
 
