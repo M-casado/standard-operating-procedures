@@ -446,7 +446,7 @@ Subject: Notification of Ticket Resolution: <VHD's ticket ID>
 ````
 Dear <VHD Officer>,
 
-I am pleased to inform you that the referenced ticket <VHD's ticket ID> has been successfully resolved. All necessary actions have been completed, and the issue has been addressed as required.
+I am pleased to inform you that the referenced ticket <VHD's ticket ID> has been successfully resolved. It was handled by <assigned helpdesk> with a priority status of <priority status> and classified as <type of ticket>. The issue has been resolved in alignment with the established procedures.
 
 If there are any additional steps or further input from your side, please do not hesitate to let me know.
 
