@@ -448,7 +448,7 @@ Dear <VHD Officer>,
 
 I am pleased to inform you that the referenced ticket <issue number> has been successfully resolved. All necessary actions have been completed, and the issue has been addressed as required.
 
-If there are any additional steps or further input needed from your side, please do not hesitate to let me know.
+If there are any additional steps or further input from your side, please do not hesitate to let me know.
 
 Thank you for your cooperation.
 
