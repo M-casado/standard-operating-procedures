@@ -289,13 +289,13 @@ Find below a list of tags to use as the GDI NHD to classify tickets according to
 
   - Data query - to be used when a user has a specific question about the data 
 
-  - General question - general questions about EGA e.g., “where are you based?”
+  - General question - general questions about GDI 
 
   - Non - user data request - user that does not have access to a dataset and needs to be told how to access. 
 
   - Password issue - user having an issue with their password
 
-  - User account
+  - User account-related issues
 
 - **Distribution**
 
@@ -369,7 +369,7 @@ Find below a list of tags to use as the GDI NHD to classify tickets according to
 
 * **Security**
 
-  - EGA security issues - to be used if there is a security breach
+  - GDI security issues - to be used if there is a security breach
 
 
 - **Delete**
@@ -384,9 +384,9 @@ Find below a list of tags to use as the GDI NHD to classify tickets according to
  
 ###### 8.4.1.2 Ticket priority
 
-We propose the use of three priority levels as listed below. However, each node might decide to use other levels.
+Use three priority levels as listed below. However, you may choose to implement other levels based on your node's preferences.
 
-- **Low** - suitable for tickets that are expected to be resolved quickly and which are of routine character
+- **Low** - suitable for tickets that are not expected to be resolved quickly and which are of routine character
 
 - **Medium** - suitable for tickets that are more complicated and might take longer time to resolve
 
@@ -394,11 +394,13 @@ We propose the use of three priority levels as listed below. However, each node 
 
 ###### 8.4.1.3 Ticket assignee
 
-Name of node helpdesk officer assigned to the ticket.
+- Name of node helpdesk officer assigned to the ticket.
+- Email address of the assigned person
+- Additional helpdesk officers assigned to the issue
 
 ###### 8.4.1.4 Ticket status
 
-We propose the use of the model listed below. However, each node might decide to use another model.
+Use the model listed below. However, you may choose to implement a different model based on your node's preferences.
 
 - **New** - ticket that has not yet been started to be resolved
 
@@ -415,9 +417,10 @@ We propose the use of the model listed below. However, each node might decide to
 |:---|:---|:---|
 | ``4.2`` | Following the creation of the documentation issue after a negative ticket evaluation | Helpdesk officer |
 
-When the ticket was evaluated negatively then, choose the following tags: 
--  **Type of ticket**: out-of-scope 
--  **Ticket assignee**: choose from the list the name of the assigned HD member 
+When the ticket was evaluated negatively then, as the NHD, choose the following tags: 
+-  **Type of ticket**: out-of-scope
+-  **Ticket priority**: Select the appropriate priority level from the list
+-  **Ticket assignee**: Select the assigned helpdesk member(s) and their email address from the list
 -  **Ticket Status**: Deleted 
 
 #### 8.5. Follow NHD SOP for Ticket Handling 
@@ -426,8 +429,8 @@ When the ticket was evaluated negatively then, choose the following tags:
 | ``5`` | After assigning tags | Helpdesk officer |
 
 Once you have assigned the appropriate tags then proceed with the designated **SOP for Ticket handling** 
-- If the ticket receives a **positive evaluation**, proceed to [SOP...].
-- If the ticket receives a **negative evaluation**, proceed to [SOP...].
+- If the ticket receives a **positive evaluation**, proceed to ``<your corresponding NHD SOP>``.
+- If the ticket receives a **negative evaluation**, proceed to ``<your corresponding NHD SOP>``.
 
 #### 8.6. Inform the VHD of Ticket Resolution 
 
@@ -435,7 +438,7 @@ Once you have assigned the appropriate tags then proceed with the designated **S
 |:---|:---|:---|
 | ``6`` | After the ticket handling  | Helpdesk officer |
 
-Once the ticket has been handled and resolved according to the corresponding SOP,inform the VHD about the ticket resolution. 
+Once the ticket has been handled and resolved according to the corresponding SOP, inform the VHD about the ticket resolution. 
 
 When you resolve the issue (that had a **positive ticket evaluation**), send a brief notification to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
 
