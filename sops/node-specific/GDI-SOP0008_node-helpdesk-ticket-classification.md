@@ -153,7 +153,7 @@ flowchart TD
 |:---|:---|:---|
 | ``1`` | After receiving a ticket from the VHD and **within 7 working days** | Helpdesk officer  |
 
-The NHD receives a ticket from the VHD requiring action by the specific node. Evaluate the ticket **within 7 working days** to determine whether it is **within the node's scope** (positive evaluation) **or not** (negative evaluation).
+The NHD receives a ticket from the VHD requiring action by the specific node. Evaluate the ticket **within 7 working days** to determine whether it is **within the node's scope** (positive evaluation) **or not** (negative evaluation) based on your node's evaluation criteria.
 
 - A ticket is considered **positively evaluated** if all the following criteria are met: 
    - ``< node's scope criteria 1>``
@@ -177,7 +177,7 @@ The NHD receives a ticket from the VHD requiring action by the specific node. Ev
 |:---|:---|:---|
 |  ``2`` | After step 1, if the evaluation is positive, and **within 7 working days**| Helpdesk officer |
 
-If the ticket is within the scope of the NHD (positive evaluation), then create a **new issue** in the designated system to record the ticket's arrival and document the positive evaluation. 
+If the ticket is within the scope of the NHD (positive evaluation), follow your node's established procedure to create  **new issue** in the designated system, recording the ticket's arrival and documenting the positive evaluation. 
 
 Proceed to [step 4](#84-assign-tags)
 
@@ -187,7 +187,7 @@ Proceed to [step 4](#84-assign-tags)
 |:---|:---|:---|
 | ``3`` | After step 1, if the evaluation is negative, and **within 7 working days** | Helpdesk officer |
 
-If the ticket is out of the scope of the NHD (negative evaluation), then create a **new documentation issue** in the dedicated system to record the ticket's arrival and document the negative evaluation.
+If the ticket is out of the scope of the NHD (negative evaluation), follow your node's established procedure to create **new documentation issue** in the dedicated system, recording the ticket's arrival and documenting the negative evaluation.
 
 Proceed to [step 4](#84-assign-tags)
 
@@ -435,9 +435,9 @@ Once you have assigned the appropriate tags then you will proceed with the desig
 |:---|:---|:---|
 | ``6`` | After the ticket handling  | Helpdesk officer |
 
-Once the ticket has been handled and resolved, you will inform the VHD about the ticket resolution. 
+Once the ticket has been handled and resolved according to the corresponding SOP, you will inform the VHD about the ticket resolution. 
 
-When you resolve the issue (based on a **positive ticket evaluation**), send a brief notification to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
+When you resolve the issue (that had a **positive ticket evaluation**), send a brief notification to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
 
 ````
 Subject: Notification of Ticket Resolution: <VHD's ticket ID>
@@ -458,7 +458,7 @@ Best regards,
 <GDI Node>
 ````
 
-If the issue is **out of NHD's scope**, send a brief explanation of this decision to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
+If the documentation issue is **out of NHD's scope**, send a brief explanation of this decision to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
 ````
 Subject: Notification of Ticket Status: <VHD's ticket ID> - Out of Scope for <GDI Node Helpdesk>
 ````
