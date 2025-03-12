@@ -212,13 +212,13 @@ If the evaluation of the ticket was **negative** then:
 
 Classify the ticket with **four tags** as described below: 
 
-1. [**Type of ticket**](#8411-type-of-ticket): Specifies the type of ticket.
+- 4.1.1 [**Type of ticket**](#8411-type-of-ticket): Specifies the type of ticket.
 
-2. [**Ticket priority**](#8412-ticket-priority): Specifies the ticket's priority level.
+- 4.1.2 [**Ticket priority**](#8412-ticket-priority): Specifies the ticket's priority level.
 
-3. [**Ticket assignee**](#8413-ticket-assignee): Specifies who is responsible for resolving the ticket.
+- 4.1.3 [**Ticket assignee**](#8413-ticket-assignee): Specifies who is responsible for resolving the ticket.
 
-4. [**Ticket status**](#8414-ticket-status): Specifies the ticket's status (initially set to "New").
+- 4.1.4 [**Ticket status**](#8414-ticket-status): Specifies the ticket's status (initially set to "New").
 
 
 ###### 8.4.1.1 Type of ticket
