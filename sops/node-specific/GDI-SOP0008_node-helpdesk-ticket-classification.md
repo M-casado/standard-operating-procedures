@@ -445,11 +445,13 @@ Subject: Notification of Ticket Resolution: <VHD's ticket ID>
 ````
 Dear <VHD Officer>,
 
-I am pleased to inform you that the referenced ticket <VHD's ticket ID> has been successfully resolved. It was handled by <assigned helpdesk> with a priority status of <priority status> and classified as <type of ticket>. The issue has been resolved in alignment with the established procedures.
+I am pleased to inform you that the referenced ticket <VHD's ticket ID> has been successfully resolved. It was reviewed and handled by <assigned helpdesk member(s)> with a priority status of <priority status> and classified as <type of ticket>.
 
-If there are any additional steps or further input from your side, please do not hesitate to let me know.
+As a result, the ticket will be considered resolved and closed. However, if additional details or feedback are provided, it can be reopened for further review.
 
-Thank you for your cooperation.
+Please do not hesitate to contact me with any questions or concerns. 
+
+Thank you for your cooperation and support.
 
 Best regards,  
 <Name of NHD Officer>  
@@ -458,18 +460,18 @@ Best regards,
 
 If the issue is **out of NHD's scope**, a brief explanation of this decision should be provided. You can use the following template to send an email (by Node GDI email address) or a message through the node's designated system to notify the VHD. 
 ````
-Subject: Ticket with <VHD's ticket ID> Out of Scope for the <GDI node helpdesk>
+Subject: Notification of Ticket Status: <VHD's ticket ID> - Out of Scope for <GDI Node Helpdesk>
 ````
 ````
 Dear <VHD officer>,
 
-After careful evaluation, the referenced ticket <VHD's ticket ID>, handled by the <assigned helpdesk>, having a <priority status> has been determined to be out of scope for our node helpdesk due to the following reason(s).
+Following a careful evaluation and in accordance with our established procedures, we have determined that the referenced ticket <VHD's ticket ID>, handled by the <assigned helpdesk member(s)>, with a <priority status> falls outside of the scope of our node helpdesk. This conclusion has been reached for the following reason(s).
 
 <Reason(s)>
 
-As a result, we will consider the ticket resolved and closed unless you provide any further input or raise objections. If you do provide input, we will reopen the ticket as needed.
+As a result, we will consider the ticket resolved and closed unless further input or objections are raised. Should additional details or feedback be provided, the ticket can be reopened for further review. 
 
-Please feel free to reach out if you have any concerns.
+Please do not hesitate to contact me with any questions or concerns. 
 
 Best regards,
 <Name of NHD officer>
