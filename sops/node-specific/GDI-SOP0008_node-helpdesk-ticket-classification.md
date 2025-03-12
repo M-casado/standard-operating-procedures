@@ -223,7 +223,7 @@ Classify the ticket with **four tags** as described below:
 
 ###### 8.4.1.1 Type of ticket
 
-Based on EGA’s tag system, below is a list of tags that can be used by the node HD in the GDI to classify tickets according to **the type of ticket.** Each node will decide which of these tags to use for ticket classification in their node HD.
+Find below a list of tags to use as the GDI NHD to classify tickets according to **the type of ticket**. This list is derived from EGA's internal HD system. You can choose to use tags from this list or decide which tags to use for ticket classification at your NHD.
 
 - **Out-of-scope**
 
