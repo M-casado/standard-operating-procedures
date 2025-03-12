@@ -210,7 +210,7 @@ If the evaluation of the ticket was **negative** then:
 |:---|:---|:---|
 | ``4.1`` | Following the creation of the issue after a positive ticket evaluation | Helpdesk officer |
 
-You will classify the ticket with **four tags** as described below: 
+Classify the ticket with **four tags** as described below: 
 
 1. [**Type of ticket**](#8411-type-of-ticket): Specifies the type of ticket.
 
@@ -415,7 +415,7 @@ We propose the use of the model listed below. However, each node might decide to
 |:---|:---|:---|
 | ``4.2`` | Following the creation of the documentation issue after a negative ticket evaluation | Helpdesk officer |
 
-When the ticket was evaluated negatively then, you will choose the following tags: 
+When the ticket was evaluated negatively then, choose the following tags: 
 -  **Type of ticket**: out-of-scope 
 -  **Ticket assignee**: choose from the list the name of the assigned HD member 
 -  **Ticket Status**: Deleted 
@@ -425,7 +425,7 @@ When the ticket was evaluated negatively then, you will choose the following tag
 |:---|:---|:---|
 | ``5`` | After assigning tags | Helpdesk officer |
 
-Once you have assigned the appropriate tags then you will proceed with the designated **SOP for Ticket handling** 
+Once you have assigned the appropriate tags then proceed with the designated **SOP for Ticket handling** 
 - If the ticket receives a **positive evaluation**, proceed to [SOP...].
 - If the ticket receives a **negative evaluation**, proceed to [SOP...].
 
@@ -435,7 +435,7 @@ Once you have assigned the appropriate tags then you will proceed with the desig
 |:---|:---|:---|
 | ``6`` | After the ticket handling  | Helpdesk officer |
 
-Once the ticket has been handled and resolved according to the corresponding SOP, you will inform the VHD about the ticket resolution. 
+Once the ticket has been handled and resolved according to the corresponding SOP,inform the VHD about the ticket resolution. 
 
 When you resolve the issue (that had a **positive ticket evaluation**), send a brief notification to the VHD. Use the following template to draft your email (sent via the Node GDI email address) or to communicate through the node's designated system. Adjust the template content as needed for your specific case.
 
