@@ -58,6 +58,7 @@ Find GDI SOPs common Glossary at the [charter document](https://github.com/Genom
 | NHD | Node Helpdesk |
 | OK | All correct |
 | ORR | Organisational Roles and Responsibilities |
+| RI | Research Infrastructure |
 | SOP | Standard Operating Procedure |
 | SP | Submitter Portal |
 | UU | University of Uppsala |
