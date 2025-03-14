@@ -223,6 +223,9 @@ Classify the ticket with **four tags** as described below:
 
 
 ###### 8.4.1.1 Type of ticket
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.1.1`` | As part of step ``4.1`` | Helpdesk officer |
 
 Find below a list of tags to use as the GDI NHD to classify tickets according to **the type of ticket**. This list is derived from EGA's internal HD system. You can choose to use tags from this list or decide which tags to use for ticket classification at your NHD.
 
@@ -384,6 +387,9 @@ Find below a list of tags to use as the GDI NHD to classify tickets according to
   - Tags for different consortiums
  
 ###### 8.4.1.2 Ticket priority
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.1.2`` | As part of step ``4.1`` | Helpdesk officer |
 
 Use three priority levels as listed below. However, you may choose to implement other levels based on your node's preferences.
 
@@ -394,12 +400,18 @@ Use three priority levels as listed below. However, you may choose to implement 
 - **High** - suitable for tickets that need to be handled immediately, e.g. security breaches
 
 ###### 8.4.1.3 Ticket assignee
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.1.3`` | As part of step ``4.1`` | Helpdesk officer |
 
 - Name of node helpdesk officer assigned to the ticket.
 - Email address of the assigned person
 - Additional helpdesk officers assigned to the issue
 
 ###### 8.4.1.4 Ticket status
+| Step identifier | When | Who |
+|:---|:---|:---|
+| ``4.1.4`` | As part of step ``4.1`` | Helpdesk officer |
 
 Use the model listed below. However, you may choose to implement a different model based on your node's preferences.
 
