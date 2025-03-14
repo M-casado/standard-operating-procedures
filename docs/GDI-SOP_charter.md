@@ -72,6 +72,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | PR               | Pull Request                                                            |
 | QMS              | Quality Management System                                               |
 | RFC              | Request For Comments                                                    |
+| RI               | Research Infrastructure                                                 |
 | SDPC             | Security and Data Protection Committee                                  |
 | SLA              | Service Level Agreement                                                 |
 | SP               | Submitter Portal                                                        |
