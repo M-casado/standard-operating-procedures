@@ -88,7 +88,7 @@ See the qualifications and responsibilities of the roles in the [Organisational 
 | Author | Silvia Bahena | Task 4.3 member  | EMBL-EBI |
 | Reviewer | Marcos Casado Barbero  | Task 4.3 Lead | EMBL-EBI  |
 | Reviewer | Bianca Hendriksze  | Task 4.3 member | Health-RI  |
-| Approver |  |  |  |
+| Approver | Marcos Casado Barbero  |  Task 4.3 Lead  | EMBL-EBI  |
 | Authorizer |  |  |  |
 
 ### 4. Purpose
