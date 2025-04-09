@@ -200,7 +200,7 @@ Proceed to [step 4](#84-assign-tags)
 
 Once you create the issue in the Node Ticket Management System, the next step is to **assign tags**. 
 
-If the evaluation of the ticket was **positive** then: 
+If the evaluation of the ticket at [step 1](#81-evaluating-a-ticket-from-the-vhd) was **positive** then: 
 - Proceed to [step 4.1](#841-choose-tags-for-positive-evaluation).
 
 If the evaluation of the ticket was **negative** then: 
