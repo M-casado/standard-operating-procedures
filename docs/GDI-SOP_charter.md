@@ -93,15 +93,18 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 | **Term**         | **Definition**                                                         |
 |------------------|-------------------------------------------------------------------------|
+| API | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
-| JIRA | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
+| JIRA             | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
+| JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
 | Ticket           |A ticket is a recorded request or issue submitted for support, tracking, or resolution. It serves as a unit of work that enables communication and accountability throughout its lifecycle.|
 | Ticket Classification | Process of categorizing tickets based on their type, urgency, or topic to ensure efficient handling and appropriate routing.  |
 | Virtual Helpdesk | Centralized, digital support service that coordinates and responds to incoming requests across the network. In GDI, it complements Node helpdesks by offering cross-node guidance, escalation, and harmonization of support efforts.  |
+| XML  | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
 | YYYYMMDD         | Date format in year-month-day                                          |
 
 
