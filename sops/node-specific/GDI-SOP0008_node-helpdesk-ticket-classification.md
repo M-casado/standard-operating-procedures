@@ -203,7 +203,7 @@ Once you create the issue in the Node Ticket Management System, the next step is
 If the evaluation of the ticket at [step 1](#81-evaluating-a-ticket-from-the-vhd) was **positive** then: 
 - Proceed to [step 4.1](#841-choose-tags-for-positive-evaluation).
 
-If the evaluation of the ticket was **negative** then: 
+If the evaluation of the ticket at [step 1](#81-evaluating-a-ticket-from-the-vhd) was **negative** then: 
 - Proceed to [step 4.2](#842-choose-tags-for-negative-evaluation).
 
 ##### 8.4.1 Choose tags for positive evaluation
