@@ -99,7 +99,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
-| Ticket           | Incoming issues from the GDI Virtual Helpdesk, are to be processed within the Node Helpdesk and, after that, returned to the Virtual Helpdesk |
+| Ticket           |A ticket is a recorded request or issue submitted for support, tracking, or resolution. It serves as a unit of work that enables communication and accountability throughout its lifecycle|
 | Ticket Classification | The process of categorising support requests is based on their nature so that they can be assigned to the appropriate individual or team for resolution.  |
 | Virtual Helpdesk | The initial point of contact for inquiries and requests related to data management in the GDI project. |
 | YYYYMMDD         | Date format in year-month-day                                          |
