@@ -196,7 +196,7 @@ Proceed to [step 4](#84-assign-tags)
 
 | Step identifier | When | Who |
 |:---|:---|:---|
-| ``4`` | After creating a new issue or documentation issue in Node Ticket Management System and **within 7 working days** | Helpdesk officer |
+| ``4`` | After creating a new issue in the Node Ticket Management System and **within 7 working days** | Helpdesk officer |
 
 Once you create the issue in the Node Ticket Management System, the next step is to **assign tags**. 
 
