@@ -33,6 +33,7 @@
 
 | Template Version | Instance version | Author(s) | Description of changes | Date |
 |---|---|---|---|---|
+|  ``v1.0.1``  |  | Elisavet Torstensson,  Silvia Bahena| Updated text formatting and clarified key points based on reviews | 2025.04.10 |
 |  ``v1``  |  | Elisavet Torstensson, Mattias Strömberg, Silvia Bahena| Created the first version of the SOP | 2025.02.04 |
 
 ### 2. Glossary
