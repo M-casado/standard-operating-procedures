@@ -233,162 +233,93 @@ Below is a list of tags proposed for use by GDI NHDs to classify tickets by type
 	
 Each node is encouraged to define and adapt its own set of tags based on the specific needs of its system or service. Nodes may select multiple tags if required for different scenarios.
 
-- **Out-of-scope**
-
-  - Issues that are out-of-scope of the nodes' helpdesk  
-
-- **UX**
-
-  - Development feedback - to be used when a user provides feedback about our tools
-
-  - Documentation improvement - to be used when a user highlights our documentation is wrong/out of date/not clear
-
-  - Interface issue - to be used when issue with web pages
-
-* **JIRA & Datasubs**
-
-  - JIRA - when you need to create a JIRA ticket for an issue that HD cannot resolve
-
-- **Submission**
-
-  - API - Submission - to be used when a submitter is using the submission API
-
-  - Data deposition - user submitting data
-
-  - Data deposition intention - to be used when initial submission request comes in 
-
-  - Data deposition policy documents - to be used when users query if their DAA (Data Access Agreement)  is OK or ask questions about DAA.
-
-  - Post release change - to be used when user wants to update submission objects
-
-  - Data deposition problem - user having problems with data deposition
-
-  - Data deposition question - general question about submission (i.e., not a problem but a question like “do you take X data type”)
-
-  - Uploader issue - use when user is having issue with Aspera or FTP upload
-
-  - Encryption Issue - user needs advice on file encryption
-
-  - Large submission - to be used if submission is over 10TB
-
-  - Missing study/dataset on live - to be used when user highlights study/dataset is published but not released
-
-  - Phenotype data - to be used for phenotype data submission
-
-  - Priority submission - use in conjunction with consortium from tags further down
-
-  - Publication ID query - use for when people are asking how to generate accession IDs for journal
-
-  - Study/dataset release - releasing a study/dataset to live site
-
-  - Programmatic Submission problem - to be used with programmatic submitters who are having issues with their XML
-
-  - Submitter portal issue - to be used when there is issue with SP
-
-  - JSON submission issue
-
-* **Submission Type**
-
-  - AF processing issue - HD unable to process AF due to commands not working i.e., requires a developer to change code
-
-  - AF processing template - user not completed the AF template correctly
-
-- **User** 
-
-  - Data query - to be used when a user has a specific question about the data 
-
-  - General question - general questions about GDI 
-
-  - Non - user data request - user that does not have access to a dataset and needs to be told how to access. 
-
-  - Password issue - user having an issue with their password
-
-  - User account-related issues
-
-- **Distribution**
-
-  - File issues - to be used for “truncated files” which could have been submitted truncated or are truncated due to error in download. Also missing files from a dataset
-
-  - Metadata issues - users asking further info on metadata e.g., trying to understand how it links, asking if more data available
-
-  - Metadata query - user asking how to download metadata or asking for AF metadata
-
-    - **Distribution\_Download\_Account**
-
-       - Datasets/files request not in client -  used for files not available with the download tool
-
-       - Alternative Download - to be used when a user cannot download using any of our download tools
-
-    - **Distribution Keys**
-
-       - Key request
-
-    - **Distribution\_Download\_Client**
-
-       - API Download - to be used 
-
-       - Dataset/file requesting issues
-
-       - Decryption/unzipping problems
-
-       - Download streamer
-
-       - Download streamer 500
-
-       - Download streamer issues
-
-       - Firewall issues
-
-       - Log in problems
-
-       - Null/Sleeping timeout errors
-
-       - Download client issues
-
-       - User error
-    
-       - Version issue
-
-- **DAC** 
-
-  - DAC tool query - to be used when DAC is having issues with tools 
-
-  - DAC curation - to  be used when we do DAC curation, and update DACs for DACs i.e., change DAC members
-
-  - Update DAC - use for contact and detail changes
-
-  - DAC referred - to be used when we have to point a user back to a DAC e.g., they say they have been granted access but we can’t see that they have
-
-  - DAC request to create account - DAC requesting to creating a user account
-
-* **Archiving**
-
-  - Data deposition - Archiving issue
-
-  - Archiving state - file is still processing somewhere
-
-  - Failed state - file has failed to archive
-
-  - Tags for different files status 
-
-- **External Comms**
-
-  - Journal communications - to be used when in communication with Journals
-
-* **Security**
-
-  - GDI security issues - to be used if there is a security breach
-
-
-- **Delete**
-
-  - Non - issue - to be used when user has submitted a ticket with an issue, and then replied to the ticket saying “all ok after all” before we have had chance to reply
-
-  - Spam
-
-* **Consortium**
-
-  - Tags for different consortiums
+### Archiving
+| Tag | Definition |
+|-----|------------|
+| Archiving status | File is still processing in the archive |
+| Data deposition - Archiving issue | Issue with archiving during deposition |
+| Failed status | File has failed to archive |
+### DAC
+| Tag | Definition |
+|-----|------------|
+| DAC curation | We do DAC curation or update DAC members |
+| DAC referred | User pointed back to DAC for access or clarification |
+| DAC request  | DAC request |
+| Update DAC | Contact and detail changes in DAC |
+### Distribution
+| Tag | Definition |
+|-----|------------|
+| File issues | Truncated or missing files from a dataset |
+| Metadata issues | User asking for more info on metadata or its structure |
+| Metadata query | User asking how to download or understand metadata |
+### Download Issues
+| Tag | Definition |
+|-----|------------|
+| API Download | Issue related to API-based download |
+| Alternative Download | User cannot download using any of our tools |
+| Dataset/file requesting issues | Problems requesting specific datasets/files |
+| Datasets/files request not in client | Files not available with the download tool |
+| Decryption/unzipping problems | Issues with decrypting or unzipping files |
+| Download client issues | General issues with the download client |
+| Firewall issues | Download issues caused by firewalls |
+| Key request | Request for decryption keys |
+| Log in problems | Problems logging into download client or portal |
+| Null/Sleeping timeout errors | Timeout-related errors during download |
+| User error | Errors due to user actions |
+| Version issue | Problems due to client version |
+### External Communications
+| Tag | Definition |
+|-----|------------|
+| Journal communications | Communications with journals |
+### Issue Tracking
+| Tag | Definition |
+|-----|------------|
+| JIRA | To be used when you need to create a JIRA ticket for an issue that Helpdesk cannot resolve and requires dev involment |
+### Other
+| Tag | Definition |
+|-----|------------|
+| Consortium | Tags related to different consortiums |
+| Non - issue | User submitted a ticket but later said the issue was resolved |
+### Scope & Feedback
+| Tag | Definition |
+|-----|------------|
+| Documentation improvement | To be used when a user highlights our documentation is wrong/out of date/not clear |
+| Interface issue | To be used when there is an issue with web pages |
+| Out-of-scope | Issues that are out-of-scope of the nodes' helpdesk and are redirected to VHD if required|
+| UX | Development feedback - to be used when a user provides feedback about service tools |
+### Security
+| Tag | Definition |
+|-----|------------|
+| GDI security issues | Security-related issues in GDI |
+### Submission
+| Tag | Definition |
+|-----|------------|
+| API - Submission | To be used when a submitter is using the submission API |
+| Data deposition | User submitting data |
+| Data deposition intention | To be used when initial submission request comes in |
+| Data deposition policy documents | To be used when users query if their DAA is OK or ask questions about DAA |
+| Data deposition problem | User having problems with data deposition |
+| Data deposition question | General question about submission (not a problem) |
+| Encryption Issue | User needs advice on file encryption |
+| JSON submission issue | Issue related to JSON submission |
+| Large submission | To be used if submission is over 10TB |
+| Missing study/dataset on live | To be used when user highlights study/dataset is published but not released |
+| Phenotype data | To be used for phenotype data submission |
+| Post release change | To be used when user wants to update submission objects |
+| Priority submission | Use in conjunction with consortium tags |
+| Programmatic Submission problem | Programmatic submitters having issues with their XML |
+| Publication ID query | When people are asking how to generate accession IDs for journal |
+| Study/dataset release | Releasing a study/dataset to live site |
+| Submitter portal issue | There is an issue with the Submitter Portal |
+| Uploader issue | User is having issue with Aspera or FTP upload |
+### User Support
+| Tag | Definition |
+|-----|------------|
+| Data query | User has a specific question about the data |
+| General question | General questions about GDI |
+| Non - user data request | User does not have access to a dataset and needs guidance |
+| Password issue | User is having an issue with their password |
+| User account-related issues | Issues related to user accounts |
  
 ###### 8.4.1.2 Ticket priority
 | Step identifier | When | Who |
