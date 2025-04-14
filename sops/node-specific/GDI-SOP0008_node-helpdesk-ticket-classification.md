@@ -228,7 +228,9 @@ Classify the ticket with **four tags** as described below:
 |:---|:---|:---|
 | ``4.1.1`` | As part of step ``4.1`` | Helpdesk officer |
 
-Find below a list of tags to use as the GDI NHD to classify tickets according to **the type of ticket**. This list is derived from EGA's internal HD system. You can choose to use tags from this list or decide which tags to use for ticket classification at your NHD.
+Below is a list of tags proposed for use by GDI NHDs to classify tickets by type. This list is derived from EGA’s internal Helpdesk system and is intended as a set of examples to provide guidance and inspiration.
+	
+Each node is encouraged to define and adapt its own set of tags based on the specific needs of its system or service. Nodes may select multiple tags if required for different scenarios.
 
 - **Out-of-scope**
 
