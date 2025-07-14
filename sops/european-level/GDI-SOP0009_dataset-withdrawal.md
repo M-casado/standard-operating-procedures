@@ -30,29 +30,28 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 
 | Abbreviation | Description     |
 |---------------|-----------------|
-|      #!         |                 |
-|GDPR|General Data Protection Regulation|
-|GDI|Genomic Data Infrastructure|
-|FEGA|Federated EGA|
-|EGA|European Genome-phenome Archive|
-|SOP|Standard Operating Procedure|
-|VHD|Virtual Helpdesk|
-|PID|Permanent Identifier|
-|FDP|FAIR Data Point|
-|UP|User portal|
-|FAIR|Findability, Accessibility, Interoperability and Reusability|
-|CC|Carbon Copy|
-|SPE|Secure Processing Environment|
-|TL|Technical Lead|
-|IdP|Identity Provider|
-|REMS|Resource Entitlement Management System|
+| CC | Carbon Copy |
+| EGA | European Genome-phenome Archive |
+| FDP | FAIR Data Point |
+| FEGA | Federated EGA |
+| FAIR | Findability, Accessibility, Interoperability and Reusability |
+| GDI | Genomic Data Infrastructure |
+| GDPR | General Data Protection Regulation |
+| IdP | Identity Provider |
+| PID | Permanent Identifier |
+| REMS | Resource Entitlement Management System |
+| SOP | Standard Operating Procedure |
+| SPE | Secure Processing Environment |
+| TL | Technical Lead |
+| UP | User portal |
+| VHD | Virtual Helpdesk |
 
 | Term          | Definition      |
 |---------------|-----------------|
+|Data controller|The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+|Hard-deletion|Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
 |Requester|The person that initiates the request to the VHD for the dataset to be withdrawn|
-|Data controller| |
-|Hard-deletion| |
-|Soft-deletion| |
+|Soft-deletion|Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
 
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
