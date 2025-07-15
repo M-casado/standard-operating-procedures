@@ -23,7 +23,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v0`` |  | Marcos Casado Barbero | Draft SOP | 2025.07.11 |
+| ``v0`` |  | Marcos Casado Barbero | Draft SOP | 2025.07.15 |
 
 ### 2. Glossary
 Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
@@ -423,8 +423,8 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
       - Nodes' Beacons (_#! SOP TBD_).
    - Dataset Browser (_#! SOP TBD_).
       - Nodes' FAIR Data Points (FDP) (_#! SOP TBD_).
-   - Allele Frequency (AF) Browser (_#! SOP TBD_).
-      - Nodes' AF Beacons (_#! SOP TBD_).
+   - Allele Frequency Browser (_#! SOP TBD_).
+      - Nodes' Allele Frequency Beacons (_#! SOP TBD_).
 - **Nodes' Secure Processing Environment** (SPE) (_#! SOP TBD_).
 
 Once you have completed the relevant withdrawal SOP for the specified GDI System:
