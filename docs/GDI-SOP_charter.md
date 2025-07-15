@@ -39,11 +39,15 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | DPA              | Data Processing Agreement                                               |
 | DPbDD            | Data Protection by Design and Default                                   |
 | DPIA             | Data Protection Impact Assessment                                       |
+| DPO              | Data Protection Officer                                                 |
 | EBI              | European Bioinformatics Institute                                       |
 | EDIC             | European Digital Infrastructure Consortium                              |
 | EGA              | European Genome-phenome Archive                                         |
 | ELSI             | Ethical, Legal, and Social Implications                                 |
 | EMBL             | European Molecular Biology Laboratory                                   |
+| FAIR             | Findability, Accessibility, Interoperability and Reusability            |
+| FDP              | FAIR Data Point                                                         |
+| FEGA             | Federated EGA                                                           |
 | FTP              | File Transfer Protocol                                                  |
 | GDI              | European Genomic Data Infrastructure                                    |
 | GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
@@ -52,6 +56,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | HD               | Helpdesk                                                                |
 | HRI              | Health Research Infrastructure                                          |
 | ID               | Identity Document                                                       |
+| IdP              | Identity Provider                                                       |
 | INSERM           | L'Institut national de la santé et de la recherche médicale (France)    |
 | ISM              | Information Service Management                                          |
 | IST              | Instituto Superior Técnico                                              |
@@ -59,6 +64,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | JSON             | JavaScript Object Notation                                              |
 | KT               | Knowledge Transfer                                                      |
 | LNDS             | Luxembourg National Data Service                                        |
+| LS               | Life Science                                                            |
 | LU               | Luxembourg                                                              |
 | MB               | Management Board                                                        |
 | MG               | Million Genomes                                                         |
@@ -69,16 +75,20 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | OC               | Operations Committee                                                    |
 | OK               | All correct                                                             |
 | ORR              | Organisational Roles and Responsibilities                               |
+| PID              | Permanent Identifier                                                    |
 | PR               | Pull Request                                                            |
 | QMS              | Quality Management System                                               |
+| REMS             | Resource Entitlement Management System                                  |
 | RFC              | Request For Comments                                                    |
 | RI               | Research Infrastructure                                                 |
 | SDPC             | Security and Data Protection Committee                                  |
 | SLA              | Service Level Agreement                                                 |
 | SP               | Submitter Portal                                                        |
 | SOP              | Standard Operating Procedure                                            |
+| SPE              | Secure Processing Environment                                           |
 | TB               | Top to Bottom                                                           |
 | TBD              | To Be Determined                                                        |
+| TL               | Technical Lead                                                          |
 | TODO             | A list of pending tasks                                                 |
 | UI               | User Interface                                                          |
 | URL              | Uniform Resource Locator                                                |
@@ -86,6 +96,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | UX               | User experience                                                         |
 | VHD              | Virtual Helpdesk                                                        |
 | VPN              | Virtual Private Network                                                 |
+| UP               | User portal                                                             |
 | WG               | Working Group                                                           |
 | WP               | Work Package                                                            |
 | XML              | Extensible Markup Language                                              |
@@ -93,18 +104,22 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 
 | **Term**         | **Definition**                                                         |
 |------------------|-------------------------------------------------------------------------|
-| API | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
+| API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
+| Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
+| Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
 | JIRA             | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 | JSON             | JavaScript Object Notation is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays (or other serializable values).|
 | Node Helpdesk    | The support team is responsible for handling tickets related to data management issues associated with the node in the GDI Project.  |
 | Permit Authority | National body responsible for data access decisions                    |
 | README           | File that provides information about a project or directory            |
+| Requester        |The person that initiates the request to the VHD for the dataset to be withdrawn|
+| Soft-deletion    |Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
 | Ticket           |A ticket is a recorded request or issue submitted for support, tracking, or resolution. It serves as a unit of work that enables communication and accountability throughout its lifecycle.|
 | Ticket Classification | Process of categorizing tickets based on their type, urgency, or topic to ensure efficient handling and appropriate routing.  |
 | Virtual Helpdesk | Centralized, digital support service that coordinates and responds to incoming requests across the network. In GDI, it complements Node helpdesks by offering cross-node guidance, escalation, and harmonization of support efforts.  |
-| XML  | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
+| XML              | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
 | YYYYMMDD         | Date format in year-month-day                                          |
 
 
