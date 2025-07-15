@@ -421,11 +421,11 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
 - **User Portal** (UP) (_#! SOP TBD_).
    - Resource Entitlement Management System (REMS) (_#! SOP TBD_).
    - Beacon Browser (_#! SOP TBD_).
-      - Nodes' Beacons (_#! SOP TBD_).
+      - Nodes' Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/64_).
    - Dataset Browser (_#! SOP TBD_).
-      - Nodes' FAIR Data Points (FDP) (_#! SOP TBD_).
+      - Nodes' FAIR Data Points (FDP) (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63_).
    - Allele Frequency Browser (_#! SOP TBD_).
-      - Nodes' Allele Frequency Beacons (_#! SOP TBD_).
+      - Nodes' Allele Frequency Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/65_).
 - **Nodes' Secure Processing Environment** (SPE) (_#! SOP TBD_).
 
 Once you have completed the relevant withdrawal SOP for the specified GDI System:
