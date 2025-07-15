@@ -175,7 +175,6 @@ flowchart TB
     classDef oc  fill:#ffe6cc,stroke:#fb8c00,color:#000
     classDef tl  fill:#e0ffd8,stroke:#34a853,color:#000
     classDef process_end fill:#ffffff,stroke:#999999,color:#000
-    style n10 fill:#FFFFFF
     style s4 fill:#FFFFFF
     style ending fill:#757575
     style start fill:#FFD600
