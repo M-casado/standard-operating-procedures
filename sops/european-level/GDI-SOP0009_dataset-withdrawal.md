@@ -75,25 +75,27 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Authorizer |                 |                 |              |
 
 ### 4. Purpose
-The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller European Genomic Data Infrastructure (GDI).Following its procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
+The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller European Genomic Data Infrastructure (GDI). Following its procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
-This procedure applies to all datasets within the GDI, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: **Federated EGA** (FEGA), the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI. As a European-level SOP, it is designed to be directly implementable by all GDI nodes and services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). It encompasses withdrawals triggered by data subject consent withdrawal, legal or ethical obligations, quality issues, or voluntary retraction by the data controller. 
+This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: **Federated EGA** (FEGA), the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)). 
 
-_Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. It also does **not** cover suspension of _access_ without removal. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems. 
+As a European-level SOP, it is designed to be directly implementable by all GDI nodes and services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
 
-This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
+It encompasses **withdrawals triggered by a requester**. This entity may be the data controller, a data subject (e.g., withdrawing their consent), legal or ethical entity fulfilling their obligations, or any GDI member due to dataset quality issues or technical needs.
+
+_Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. It also does **not** cover suspension of _access_ without removal. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems (see [Step 7](#87-per-system-dataset-withdrawal)).
 
 ### 6. Introduction and Background Information
 The GDI is a federated network of national and European services that together enable discovery, access, and analysis of genomics and related health data. Because datasets may be copied, indexed, or exposed by multiple GDI components (e.g., Federated EGA, Beacon, FAIR Data Portals), withdrawing a dataset requires a coordinated cross-system process. This SOP supplies that process.
 
 Legal and ethical obligations, particularly the General Data Protection Regulation (GDPR) [art. 17 "Right to erasure"](https://gdpr-info.eu/art-17-gdpr/), require GDI to honour withdrawal requests without undue delay. The procedure defined here ensures:
 
-- The dataset controller's decision is executed promptly and uniformly
-- All affected GDI systems receive consistent instructions
+- The dataset controller's decision is executed promptly and uniformly.
+- All affected GDI systems receive consistent instructions.
 - An auditable record of the withdrawal is maintained.
 
-Component-specific technical steps (e.g., how to remove metadata from a GDI Beacon) are handled by referenced system-level SOPs.
+Component-specific technical steps (e.g., how to remove metadata from a GDI Beacon) are handled by referenced system-level SOPs (see [Step 7](#87-per-system-dataset-withdrawal)).
 
 For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
 
