@@ -89,21 +89,105 @@ For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-
 
 ### 7. Summary or Context Diagram
 
-_< If applicable, include a diagram (e.g., in mermaid or plantUML format) summarizing the SOP step-by-step. Diagrams could represent the larger context of where this particular SOP should be used, e.g., within a "virtual helpdesk", if that is useful. >_
 ```mermaid
-graph TB
-    start( )
-    input1[Input 1]
-    step1{Evaluate input 1}
-    step2(Do X)
-    step3(Don't do X)
-    ending(" ")
+flowchart TB
+ subgraph s1["<b>GDI VHD Officer</b>"]
+        n1["Valid<br>request?"]
+        n3["Communicate rejection <br>to requester"]
+        n2["Authority<br>confirmed?"]
+        n6["Create ticket:<br>dataset-withdrawal"]
+        n8["Escalate<br>request"]
+        n9["Notify<br>requester"]
+        n10["Track progress and<br>facilitate communication"]
+        n18["Notify successful <br>withdrawal to requester"]
+        n19["Log work and <br>close tickets"]
+        n21["Verified<br>withdrawal?"]
+        n23["OC/SDPC and TLs notified<br>their completion?"]
+  end
+ subgraph s2["<b>OC/SDPC Delegate</b>"]
+        n7["Appoint<br>Technical Leads"]
+        n11["Notify GDI<br>VHD Officer"]
+  end
+ subgraph s4["<b>Per-system SOP</b>"]
+        n14@{ label: "Remove dataset's<br>(meta)data" }
+        n20["Is dataset<br>present?"]
+  end
+ subgraph s3["<b>Technical Leads (LD)</b>"]
+        n12["Acknowledge<br>notice"]
+        s4
+        n16["Follow per-system<br>withdrawal SOP"]
+        n15["Report to <br>GDI VHD Officer"]
+  end
+    n3 -- No response<br>for 1 month --> ending("<i><b>End</b></i>")
+    n2 -- no --> n3
+    n1 -- no --> n3
+    n2 L_n2_n6_0@-- yes --> n6
+    n8 L_n8_n7_0@--> n7 & n9
+    n6 L_n6_n8_0@--> n8
+    n9 --> n10
+    n12 L_n12_n16_0@--> n16
+    n7 --> n11 & n12
+    n18 L_n18_n19_0@--> n19
+    n19 L_n19_ending_0@--> ending
+    n20 L_n20_n14_0@-- yes --> n14
+    n20 L_n20_n15_0@-- no --> n15
+    n14 L_n14_n15_0@--> n15
+    n16 L_n16_n20_0@--> n20
+    n21 L_n21_n18_0@-- yes --> n18
+    n1 L_n1_n2_0@-- yes --> n2
+    n15 L_n15_n10_0@--> n10
+    start("<i>Start</i>") L_start_n1_0@--> n1
+    n11 --> n10
+    n10 L_n10_n23_0@--> n23
+    n23 L_n23_n21_0@-- yes --> n21
+    n23 -- no --> n10
+    n21 -- no --> n10
 
-    start -..- input1
-    input1 -..->|Received by Role 1| step1
-    step1 -->|Yes| step2
-    step1 -->|No| step3
-    step2 -..- ending
+    n1@{ shape: decision}
+    n3@{ shape: rect}
+    n2@{ shape: decision}
+    n6@{ shape: rect}
+    n8@{ shape: rect}
+    n9@{ shape: rect}
+    n10@{ shape: rect}
+    n18@{ shape: rect}
+    n19@{ shape: rect}
+    n21@{ shape: decision}
+    n23@{ shape: decision}
+    n11@{ shape: rect}
+    n14@{ shape: rect}
+    n20@{ shape: decision}
+    n16@{ shape: rect}
+    n15@{ shape: rect}
+    classDef vhd fill:#d8e7ff,stroke:#4285f4,color:#000
+    classDef oc  fill:#ffe6cc,stroke:#fb8c00,color:#000
+    classDef tl  fill:#e0ffd8,stroke:#34a853,color:#000
+    classDef process_end fill:#ffffff,stroke:#999999,color:#000
+    style n10 fill:#FFFFFF
+    style s4 fill:#FFFFFF
+    style ending fill:#757575
+    style start fill:#FFD600
+    style s2 fill:#FFE0B2
+    style s3 fill:#BBDEFB
+    style s1 fill:#FFF9C4
+
+    L_n2_n6_0@{ animation: slow } 
+    L_n8_n7_0@{ animation: slow } 
+    L_n6_n8_0@{ animation: slow } 
+    L_n12_n16_0@{ animation: slow } 
+    L_n7_n12_0@{ animation: slow } 
+    L_n18_n19_0@{ animation: slow } 
+    L_n19_ending_0@{ animation: slow } 
+    L_n20_n14_0@{ animation: slow } 
+    L_n20_n15_0@{ animation: slow } 
+    L_n14_n15_0@{ animation: slow } 
+    L_n16_n20_0@{ animation: slow } 
+    L_n21_n18_0@{ animation: slow } 
+    L_n1_n2_0@{ animation: slow } 
+    L_n15_n10_0@{ animation: slow } 
+    L_start_n1_0@{ animation: slow } 
+    L_n10_n23_0@{ animation: slow } 
+    L_n23_n21_0@{ animation: slow } 
 ```
 
 ### 8. Procedure
