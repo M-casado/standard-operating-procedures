@@ -2,7 +2,7 @@
 | Metadata          | Value         |
 |-------------------|---------------------|
 | Template SOP number  | ``GDI-SOP0009`` |
-| Template SOP version      | ``v0`` |
+| Template SOP version      | ``v1`` |
 | Topic      | Data & metadata management |
 | Template SOP Type      | European-level SOP |
 | GDI Node   |  |
@@ -31,21 +31,31 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Abbreviation | Description     |
 |---------------|-----------------|
 | CC | Carbon Copy |
+| DPO | Data Protection Officer |
+| EBI | European Bioinformatics Institute |
 | EGA | European Genome-phenome Archive |
-|DPO|Data Protection Officer|
+| EMBL | European Molecular Biology Laboratory |
+| FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
 | FEGA | Federated EGA |
-| FAIR | Findability, Accessibility, Interoperability and Reusability |
 | GDI | Genomic Data Infrastructure |
 | GDPR | General Data Protection Regulation |
+| ID | Identifier |
 | IdP | Identity Provider |
+| ISM | Information Service Management |
+| LS | Life Science |
+| OC | Operations Committee |
+| ORR | Organisational Roles and Responsibilities |
 | PID | Permanent Identifier |
 | REMS | Resource Entitlement Management System |
+| SDPC | Security and Data Protection Committee |
 | SOP | Standard Operating Procedure |
 | SPE | Secure Processing Environment |
+| TBD | To Be Determined |
 | TL | Technical Lead |
 | UP | User portal |
 | VHD | Virtual Helpdesk |
+| WP | Work Package |
 
 | Term          | Definition      |
 |---------------|-----------------|
@@ -59,7 +69,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
-| Author     | Marcos Casado Barbero |Task 4.3 member|EMBL-EBI|
+| Author     |Marcos Casado Barbero|Task 4.3 member|EMBL-EBI|
 | Reviewer   |                 |                 |              |
 | Approver   |                 |                 |              |
 | Authorizer |                 |                 |              |
@@ -112,7 +122,7 @@ flowchart TB
         n14@{ label: "Remove dataset's<br>(meta)data" }
         n20["Is dataset<br>present?"]
   end
- subgraph s3["<b>Technical Leads (LD)</b>"]
+ subgraph s3["<b>Technical Leads (TL)</b>"]
         n12["Acknowledge<br>notice"]
         s4
         n16["Follow per-system<br>withdrawal SOP"]
