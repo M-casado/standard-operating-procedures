@@ -209,12 +209,12 @@ flowchart TB
 Once the request is received, it is your responsibility as VHD officer to evaluate its idoneity:
 - The request **must contain**:
   - Dataset **identifier** (accession, title, or PID)
+  - Requester **identity**, **authority** over the dataset, and **contact** details (including stakeholders to CC during the process). This may be derived from the process that created the request to the VHD (e.g., a logged-in user).
   - **Scope**. This includes:
     - Whether the dataset is to be withdrawn **fully** or **partially** (e.g., "only withdraw a subject's metadata from the dataset").
     - Whether the withdrawal is to be done through **hard-** or **soft-deletion**. Whether this can be fulfilled in each GDI system is assessed later; here we only evaluate the request itself.
     - The **systems** where the dataset was uploaded (e.g., GDI Beacon, UP, FDP). This will not limit the withdrawal process to these systems alone, but helps trace data propagation through GDI.
   - **Reason** for withdrawal (consent withdrawal, legal order, error at submission, etc.).
-  - Requester **identity**, **authority** over the dataset, and **contact** details (including stakeholders to CC during the process). This may be derived from the process that created the request to the VHD (e.g., a logged-in user).
 - The request must pertain to a **suitable dataset**:
   - The dataset must have been **submitted to** (i.e., exist within) and **released through** (i.e., publicly findable in) GDI.
 
