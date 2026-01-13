@@ -208,7 +208,7 @@ flowchart TB
 
 Once the request is received, it is your responsibility as VHD officer to evaluate its idoneity:
 - The request **must contain**:
-  - Dataset **identifier** (accession, title, or PID)
+  - Dataset **identifier** (accession, title, or PID).
   - Requester **identity**, **authority** over the dataset, and **contact** details (including stakeholders to CC during the process). This may be derived from the process that created the request to the VHD (e.g., a logged-in user).
   - **Scope**. This includes:
     - Whether the dataset is to be withdrawn **fully** or **partially** (e.g., "only withdraw a subject's metadata from the dataset").
@@ -317,7 +317,7 @@ Kind regards,
 GDI Virtual Helpdesk
 ````
 
-- **Send acknowledgement to requester** within 5 working days. Use the following template, including ticket ID and summary of next steps.
+- **Send acknowledgement to requester** within 5 working days. Use the following template, including ticket ID (the initial ID created upon receiving the withdrawal request) and summary of next steps.
 ````
 To: <REQUESTER_EMAIL>
 Subject: [<TICKET_ID>] Dataset withdrawal request
