@@ -75,7 +75,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Authorizer |                 |                 |              |
 
 ### 4. Purpose
-The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller European Genomic Data Infrastructure (GDI). Following its procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
+The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller from the European Genomic Data Infrastructure (GDI). This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
 This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: **Federated EGA** (FEGA), the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)). 
