@@ -37,7 +37,6 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | EMBL | European Molecular Biology Laboratory |
 | FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
-| FEGA | Federated EGA |
 | GDI | Genomic Data Infrastructure |
 | GDPR | General Data Protection Regulation |
 | ID | Identifier |
@@ -78,7 +77,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller from the European Genomic Data Infrastructure (GDI). This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
-This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: **Federated EGA** (FEGA), the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)). 
+This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)). 
 
 As a European-level SOP, it is designed to be directly implementable by all GDI nodes and services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
 
@@ -213,7 +212,7 @@ Once the request is received, it is your responsibility as VHD officer to evalua
   - **Scope**. This includes:
     - Whether the dataset is to be withdrawn **fully** or **partially** (e.g., "only withdraw a subject's metadata from the dataset").
     - Whether the withdrawal is to be done through **hard-** or **soft-deletion**. Whether this can be fulfilled in each GDI system is assessed later; here we only evaluate the request itself.
-    - The **systems** where the dataset was uploaded (e.g., GDI Beacon, UP, FEGA, FDP). This will not limit the withdrawal process to these systems alone, but helps trace data propagation through GDI.
+    - The **systems** where the dataset was uploaded (e.g., GDI Beacon, UP, FDP). This will not limit the withdrawal process to these systems alone, but helps trace data propagation through GDI.
   - **Reason** for withdrawal (consent withdrawal, legal order, error at submission, etc.).
   - Requester **identity**, **authority** over the dataset, and **contact** details (including stakeholders to CC during the process). This may be derived from the process that created the request to the VHD (e.g., a logged-in user).
 - The request must pertain to a **suitable dataset**:
