@@ -399,7 +399,7 @@ Genomic Data Infrastructure (GDI)
 While the ``dataset-withdrawal`` ticket is being solved (see [step 5](#85-assign-withdrawal-response-team) and [step 7](#87-per-system-dataset-withdrawal)), your role as VHD Officer is to:
 - **Track status of ``dataset-withdrawal`` ticket** (including subtasks). This includes asserting that TLs are following up on their duties with regards to their GDI systems, and reminding them if not.
 - **Follow up on overdue tasks** and escalate to OC/SDPC if needed.
-- **Facilitate communication** between requester, TLs and committees.
+- **Facilitate communication** across requester, TLs and committees. Communication with the requester should be kept minimal, and **only** happen through you as the VHD Officer (i.e., TLs and committees should not contact directly the requester).
 
 Once the ``dataset-withdrawal`` ticket has been completed (i.e., [Step 7](#87-per-system-dataset-withdrawal) has been performed for each GDI system), proceed to ⏩[**Step 8**](#88-verify-dataset-withdrawal).
 
