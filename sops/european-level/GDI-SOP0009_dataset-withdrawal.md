@@ -69,9 +69,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Role       | Full name       | GDI/node role   | Organisation |
 |------------|-----------------|-----------------|--------------|
 | Author     |Marcos Casado Barbero|Task 4.3 member|EMBL-EBI|
-| Reviewer   |                 |                 |              |
-| Approver   |                 |                 |              |
-| Authorizer |                 |                 |              |
+| Reviewer   |Silvia Bahena|Task 4.3 member|EMBL-EBI|
+| Approver   |Kjell Petersen|Task 4.3 member|University of Bergen|
+| Authorizer |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
 
 ### 4. Purpose
 The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller from the European Genomic Data Infrastructure (GDI). This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
