@@ -33,6 +33,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | CC | Carbon Copy |
 | DPO | Data Protection Officer |
 | EBI | European Bioinformatics Institute |
+| EDIC | European Digital Infrastructure Consortium |
 | EGA | European Genome-phenome Archive |
 | EMBL | European Molecular Biology Laboratory |
 | FAIR | Findability, Accessibility, Interoperability and Reusability |
@@ -43,6 +44,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | IdP | Identity Provider |
 | ISM | Information Service Management |
 | LS | Life Science |
+| NCP | Node Contact Point |
 | OC | Operations Committee |
 | ORR | Organisational Roles and Responsibilities |
 | PID | Permanent Identifier |
@@ -74,19 +76,19 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Authorizer |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
 
 ### 4. Purpose
-The purpose of this SOP is to define the process for withdrawing a dataset when requested by its controller from the European Genomic Data Infrastructure (GDI). This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
+The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI) when requested by its data controller. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
-This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component, including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)). 
+This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component (i.e., storage and interfaces), including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)).
 
 As a European-level SOP, it is designed to be directly implementable by all GDI nodes and services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
 
-It encompasses **withdrawals triggered by a requester**. This entity may be the data controller, a data subject (e.g., withdrawing their consent), legal or ethical entity fulfilling their obligations, or any GDI member due to dataset quality issues or technical needs.
+It encompasses **withdrawals triggered by a requester**. This person or entity may be the data controller, a data subject (e.g., withdrawing their consent), legal or ethical entity fulfilling their obligations, or any GDI member due to dataset quality issues or technical needs. Examples of these include: (1) data subjects requesting withdrawal based on their rights; and (2) controllers needing to withdraw data (without an explicit user requesting it) to comply with regulations.
 
-_Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. It also does **not** cover suspension of _access_ without removal. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems (see [Step 7](#87-per-system-dataset-withdrawal)).
+_Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems (see [Step 7](#87-per-system-dataset-withdrawal)).
 
 ### 6. Introduction and Background Information
-The GDI is a federated network of national and European services that together enable discovery, access, and analysis of genomics and related health data. Because datasets may be copied, indexed, or exposed by multiple GDI components (e.g., Federated EGA, Beacon, FAIR Data Portals), withdrawing a dataset requires a coordinated cross-system process. This SOP supplies that process.
+The GDI is a federated network of national and European services that together enable discovery, access, and analysis of genomics and related health data. Because datasets may be copied, indexed, or exposed by multiple GDI components (e.g., GDI Storage, Beacon, FAIR Data Portals), withdrawing a dataset requires a coordinated cross-system process. This SOP supplies that process.
 
 Legal and ethical obligations, particularly the General Data Protection Regulation (GDPR) [art. 17 "Right to erasure"](https://gdpr-info.eu/art-17-gdpr/), require GDI to honour withdrawal requests without undue delay. The procedure defined here ensures:
 
@@ -129,7 +131,7 @@ flowchart TB
         n16["Follow per-system<br>withdrawal SOP"]
         n15["Report to <br>GDI VHD Officer"]
   end
-    n3 -- No response<br>for 1 month --> ending("<i><b>End</b></i>")
+    n3 -- No response<br>for 15 days --> ending("<i><b>End</b></i>")
     n2 -- no --> n3
     n1 -- no --> n3
     n2 L_n2_n6_0@-- yes --> n6
@@ -216,7 +218,7 @@ Once the request is received, it is your responsibility as VHD officer to evalua
     - The **systems** where the dataset was uploaded (e.g., GDI Beacon, UP, FDP). This will not limit the withdrawal process to these systems alone, but helps trace data propagation through GDI.
   - **Reason** for withdrawal (consent withdrawal, legal order, error at submission, etc.).
 - The request must pertain to a **suitable dataset**:
-  - The dataset must have been **submitted to** (i.e., exist within) and **released through** (i.e., publicly findable in) GDI.
+  - The dataset must have been **submitted to** (i.e., exist within) GDI. Its release status (i.e., publicly findable) may vary, but the withdrawal request is valid regardless of whether the dataset is publicly findable through GDI or yet to be released.
 
 Upon inspection by the VHD officer:
 - If the request has all required information, it is **flagged as valid**. Move to ⏩[**step 3**](#83-verify-request-authority).
@@ -237,8 +239,8 @@ The communication should **include**:
 You must **log the communication** appropriately (e.g., CC relevant lists or update ticket status).
 
 After this communication:
-- If the requester responds within **1 month**, return to ⏩[**step 1**](#81-evaluate-withdrawal-request).
-- If the requester **does not** respond within **1 month**, the process concludes with rejection:
+- If the requester responds within **15 days**, return to ⏩[**step 1**](#81-evaluate-withdrawal-request).
+- If the requester **does not** respond within **15 days**, the process concludes with rejection:
   - Document the rejection and executed waiting period in the ``dataset-withdrawal-request`` ticket.
   - Close the ``dataset-withdrawal-request`` ticket. 🔚
 
@@ -251,15 +253,15 @@ With the requester's details and available resources:
 1. Confirm **dataset** record **exists in the GDI ecosystem** (in the respective services). ✔️
 1. Verify **requester's right** to act:
    - Is it the **dataset controller**? ✔️
-      - If not, has the requester sought the dataset controller approval? 
+      - If not, has the requester sought the dataset controller approval? The approval must be explicit and come from the corresponding dataset controller. ✔️
    - Is it the **node Data Protection Officer** (DPO) or **authorised staff**?
-   - Is it a **data subject**? If so, does its participant/subject ID match the dataset? In other words, is the participant part of the requested dataset?
-   - Is it a **GDI member**? If so, what right do they have over the dataset?
-1. Has the **dataset submitter** been made aware of the request?
-   - If so, have they have their right to **challenge** the decision? The ultimate decision is made by the data controller, but data submitters may help finding out possible issues in the request (scope, authority, etc.).
-1. Has **GDI coordination** been made aware?
+   - Is it a **data subject**? If so, does its participant/subject ID match the dataset? In other words, is the participant part of the requested dataset? Since this cannot be determined at the european level, it involves **communication with the Node Contact Point (NCP) and/or the dataset controller** for you to know if the individual is included. If uncertain, you shall request the requester to make the withdrawal request through the dataset controller.
+   - Is it a **GDI member** (i.e., stagg working in GDI)? If so, what right do they have over the dataset?
+1. Has the **data provider of the dataset** been made aware of the request?
+   - If so, have they have their right to **challenge** the decision? The ultimate decision is made by the data controller, but data providers may help finding out possible issues in the request (scope, authority, etc.).
+1. Has the **European Digital Infrastructure Consortium** (EDIC) been made aware? This may be redundant depending on the VHD ticketing system, which the EDIC may operate and thus be aware by design.
 
-**Only when** all '✔️' requirements are met, can the process can move forward:
+**Only when** all '✔️' requirements are met, can the process move forward:
 - If requirements (✔️) are met, move to ⏩[**step 4**](#84-log-and-acknowledge-valid-request)
 - If requirements (✔️) are **not** met, the request is **flagged as invalid**. Move to ⏩[**step 2**](#82-communicate-rejection-to-requester).
 
