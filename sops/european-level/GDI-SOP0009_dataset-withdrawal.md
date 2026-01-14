@@ -54,6 +54,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | SOP | Standard Operating Procedure |
 | SPE | Secure Processing Environment |
 | TBD | To Be Determined |
+| TB | Top to Bottom |
 | TL | Technical Lead |
 | UP | User portal |
 | VHD | Virtual Helpdesk |
