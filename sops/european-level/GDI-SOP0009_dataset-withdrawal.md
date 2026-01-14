@@ -23,10 +23,10 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
-| ``v0`` |  | Marcos Casado Barbero | Draft SOP | 2026.01.14 |
+| ``v1`` |  | Marcos Casado Barbero | Draft SOP | 2026.01.14 |
 
 ### 2. Glossary
-Find GDI SOPs common Glossary at the [**charter document**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_charter.md).
+Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_charter.md).
 
 | Abbreviation | Description     |
 |---------------|-----------------|
@@ -38,6 +38,7 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | EMBL | European Molecular Biology Laboratory |
 | FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
+| GA4GH | Global Alliance for Genomics and Health |
 | GDI | Genomic Data Infrastructure |
 | GDPR | General Data Protection Regulation |
 | ID | Identifier |
@@ -61,9 +62,14 @@ Find GDI SOPs common Glossary at the [**charter document**](https://github.com/G
 | Term          | Definition      |
 |---------------|-----------------|
 |Data controller|The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
-|Hard-deletion|Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
+|Dataset version|A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
+|Beacon|A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
+|Hard-deletion|Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter|
 |Requester|The person that initiates the request to the VHD for the dataset to be withdrawn|
 |Soft-deletion|Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
+|Tombstone record|A persistent landing page/metadata record kept in place of a removed dataset, providing citation and identifier details and stating the item is no longer available|
+|Withdrawal|An exceptional action where a dataset (or research object) is removed from public access, typically retaining its persistent identifier and replacing access with a notice (often via a tombstone page/record)|
+
 
 ### 3. Roles and Responsibilities
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
@@ -76,7 +82,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | Authorizer |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
 
 ### 4. Purpose
-The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI) when requested by its data controller. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
+The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI). Requests can be initiated by many parties, but execution requires controller authorisation or a valid legal basis and governance decision. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
 This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component (i.e., storage and interfaces), including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)).
@@ -112,7 +118,7 @@ flowchart TB
         n8["Escalate<br>request"]
         n9["Notify<br>requester"]
         n10["Track progress and<br>facilitate communication"]
-        n18["Notify successful <br>withdrawal to requester"]
+        n18["Notify successful <br>withdrawal to requester and data controller"]
         n19["Log work and <br>close tickets"]
         n21["Verified<br>withdrawal?"]
         n23["OC/SDPC and TLs notified<br>their completion?"]
@@ -206,9 +212,9 @@ flowchart TB
 #### 8.1. Evaluate withdrawal request
 | Step identifier   | When| Who |
 |:------------------|:----|:----|
-| ``1`` | Anytime a person or organisation submits a ``dataset-withdrawal-request`` to the GDI Virtual Helpdesk (VHD) | VHD officer |
+| ``1`` | Anytime a person or organisation submits a ``dataset-withdrawal-request`` to the GDI Virtual Helpdesk (VHD) | VHD Officer |
 
-Once the request is received, it is your responsibility as VHD officer to evaluate its idoneity:
+Once the request is received, it is your responsibility as VHD Officer to evaluate its validity:
 - The request **must contain**:
   - Dataset **identifier** (accession, title, or PID).
   - Requester **identity**, **authority** over the dataset, and **contact** details (including stakeholders to CC during the process). This may be derived from the process that created the request to the VHD (e.g., a logged-in user).
@@ -220,14 +226,14 @@ Once the request is received, it is your responsibility as VHD officer to evalua
 - The request must pertain to a **suitable dataset**:
   - The dataset must have been **submitted to** (i.e., exist within) GDI. Its release status (i.e., publicly findable) may vary, but the withdrawal request is valid regardless of whether the dataset is publicly findable through GDI or yet to be released.
 
-Upon inspection by the VHD officer:
+Upon inspection by the VHD Officer:
 - If the request has all required information, it is **flagged as valid**. Move to ⏩[**step 3**](#83-verify-request-authority).
 - If the request **does not** have all required information, it is **flagged as invalid**. Move to ⏩[**step 2**](#82-communicate-rejection-to-requester).
 
 #### 8.2. Communicate rejection to requester
 | Step identifier   | When| Who |
 |:------------------|:----|:----|
-| ``2`` | After the ``dataset-withdrawal-request`` was flagged **invalid** | VHD officer |
+| ``2`` | After the ``dataset-withdrawal-request`` was flagged **invalid** | VHD Officer |
 
 Given that the evaluation of the request was negative, **communicate the outcome** to the requester through the same channel used for the request (e.g., email, user portal).
 
@@ -247,16 +253,16 @@ After this communication:
 #### 8.3. Verify request authority
 | Step identifier   | When| Who |
 |:------------------|:----|:----|
-| ``3`` | After the ``dataset-withdrawal-request`` was flagged **valid** | VHD officer |
+| ``3`` | After the ``dataset-withdrawal-request`` was flagged **valid** | VHD Officer |
 
 With the requester's details and available resources:
-1. Confirm **dataset** record **exists in the GDI ecosystem** (in the respective services). ✔️
+1. Confirm **dataset** record **exists in the GDI ecosystem**. This is ticked as long as the dataset identifier is recognised in at least **one** authoritative registry available to VHD (e.g., UP catalogue entry, FDP record, Beacon index). ✔️
 1. Verify **requester's right** to act:
    - Is it the **dataset controller**? ✔️
       - If not, has the requester sought the dataset controller approval? The approval must be explicit and come from the corresponding dataset controller. ✔️
    - Is it the **node Data Protection Officer** (DPO) or **authorised staff**?
-   - Is it a **data subject**? If so, does its participant/subject ID match the dataset? In other words, is the participant part of the requested dataset? Since this cannot be determined at the european level, it involves **communication with the Node Contact Point (NCP) and/or the dataset controller** for you to know if the individual is included. If uncertain, you shall request the requester to make the withdrawal request through the dataset controller.
-   - Is it a **GDI member** (i.e., stagg working in GDI)? If so, what right do they have over the dataset?
+   - Is it a **data subject**? If so, does their participant/subject ID match the dataset? In other words, is the participant part of the requested dataset? Since this cannot be determined at the European level, it involves **communication with the Node Contact Point (NCP) and/or the dataset controller** for you to know if the individual is included. If uncertain, you shall request the requester to make the withdrawal request through the dataset controller.
+   - Is it a **GDI member** (i.e., staff working in GDI)? If so, what right do they have over the dataset?
 1. Has the **data provider of the dataset** been made aware of the request?
    - If so, have they have their right to **challenge** the decision? The ultimate decision is made by the data controller, but data providers may help finding out possible issues in the request (scope, authority, etc.).
 1. Has the **European Digital Infrastructure Consortium** (EDIC) been made aware? This may be redundant depending on the VHD ticketing system, which the EDIC may operate and thus be aware by design.
@@ -369,7 +375,7 @@ You are appointed **Technical Lead** (TL) for the dataset-withdrawal request det
 - Scope: <Whether the dataset is to be fully or partially withdrawn>
 - System: <GDI system's name>
 - Stated reason: <Reason for withdrawal from the requester>
-- Requester authority: <copy-pasted from previous VHD officer communication>
+- Requester authority: <copy-pasted from previous VHD Officer communication>
 - Target completion date: <Deadline of withdrawal if applicable>
 
 ACTIONS NEEDED:
@@ -380,7 +386,7 @@ ACTIONS NEEDED:
 
 You can find more details about how these tasks have been fulfilled previously at [Step 7](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/blob/main/sops/european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal).
 
-If you need additional context or support, contact the OC/SDPC (CC'ed) or the VHD officer (<VHD_OFFICER_CONTACT_DETAILS>).
+If you need additional context or support, contact the OC/SDPC (CC'ed) or the VHD Officer (<VHD_OFFICER_CONTACT_DETAILS>).
 Thank you for your prompt attention.
 
 Best regards,
@@ -391,7 +397,7 @@ OC/SDPC Delegate
 Genomic Data Infrastructure (GDI)
 ````
 - Once a TL has been assigned (i.e., each has acknowledged it) to each of the GDI systems, **record assignments and target completion date** in the ``dataset-withdrawal`` ticket.
-- **Notify VHD officer** (who managed the initial request) that leads are assigned. Include in the communication _who_ has been assigned _what_.
+- **Notify VHD Officer** (who managed the initial request) that leads are assigned. Include in the communication _who_ has been assigned _what_.
 - This **concludes** your responsibilities as the OC/SDPC delegate with respect to this SOP. 🔚
 
 #### 8.6. Track dataset withdrawal
@@ -408,12 +414,12 @@ Once the ``dataset-withdrawal`` ticket has been completed (i.e., [Step 7](#87-pe
 #### 8.7. Per-system dataset withdrawal
 | Step identifier   | When| Who |
 |:------------------|:----|:----|
-| ``7``             |After appointed as TL by the OC/SDPC at [Step 6](#86-track-dataset-withdrawal)|Technical Lead (TL)|
+| ``7``             |After appointed as TL by the OC/SDPC at [Step 5](#85-assign-withdrawal-response-team)|Technical Lead (TL)|
 
 As the TL of a GDI system, your tasks are:
 1. **Identify dataset presence**. Determine whether any (meta)data for the dataset to be withdrawn resides within the specified GDI system. This includes any type of **submitted** (meta)data, from raw data files to metadata about a patient.
 2. **Remove dataset's (meta)data**.  If present, execute withdrawal in line with the relevant system-specific SOP and the requested scope (e.g., partial/full withdrawal, soft/hard deletion).
-3. **Report status**. Update relevant stakeholders (mainly VHD officer in charge of the ticket) about your progress within this step.
+3. **Report status**. Update relevant stakeholders (mainly VHD Officer in charge of the ticket) about your progress within this step.
 
 To accomplish these tasks, **follow the appropriate SOP** for your specified system:
 - **LS Login** (_#! SOP TBD_):
@@ -431,7 +437,7 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
 
 Once you have completed the relevant withdrawal SOP for the specified GDI System:
 - **Notify VHD** of the outcome (e.g., 'there was no information...' or 'records X and Y were removed from...'). Include in your communication:
-   - Details (e.g., query details, location of logs...) to help the VHD officer verify the outcome.
+   - Details (e.g., query details, location of logs...) to help the VHD Officer verify the outcome.
    - New IDs/accessions, if the scope was partial withdrawal.
 - If the VHD Officer's **verification** (at [Step 8](#88-verify-dataset-withdrawal)) is **positive**, this **concludes** your responsibility as the TL for this GDI System with regards to this SOP. 🔚
    - Otherwise, if **negative**, **clarify with the VHD Officer** and amend as needed.
@@ -441,7 +447,7 @@ Once you have completed the relevant withdrawal SOP for the specified GDI System
 |:------------------|:----|:----|
 | ``8``             |After all TLs have notified completion of [Step 7](#87-per-system-dataset-withdrawal)|VHD Officer|
 Once all TLs have completed their respective per-system withdrawal SOPs, and thus notified you:
-- **Verify withdrawal completion**. This may be simply checking that (meta)data for a GDI system was not present to begin with; or that is no longer there after the completion of the withdrawal. In order to make this step easier, make use of the per-system SOPs at [Step 7](#87-per-system-dataset-withdrawal) and the information provided by each TL in their communication.
+- **Verify withdrawal completion**. This may be simply checking that (meta)data for a GDI system was not present to begin with; or that it is no longer there after the completion of the withdrawal. In order to make this step easier, make use of the per-system SOPs at [Step 7](#87-per-system-dataset-withdrawal) and the information provided by each TL in their communication. If you cannot directly check each system to confirm the dataset removal, request a explicit confirmation and evidence (e.g., logs, query screenshots) from the respective TLs.
 - **Document the outcome** of your investigations in the ``dataset-withdrawal`` ticket.
 - Depending on the outcome:
    - If there is any GDI system that **does not pass** the verification (i.e., dataset has not been withdrawn within the required scope): **notify responsible TL** to clarify, adding the OC/SDPC in CC.
@@ -449,7 +455,7 @@ Once all TLs have completed their respective per-system withdrawal SOPs, and thu
       - **Close the ``dataset-withdrawal`` ticket**, documenting the work done and outcome.
       - Proceed to ⏩[**Step 9**](#89-notify-requester-and-close-initial-ticket).
 
-#### 8.9. Notify requester and close initial ticket
+#### 8.9. Notify requester, data controller and close initial ticket
 | Step identifier   | When| Who |
 |:------------------|:----|:----|
 | ``9``             |After verification ([step 8](#88-verify-dataset-withdrawal))|VHD Officer|
@@ -457,6 +463,7 @@ Once all TLs have completed their respective per-system withdrawal SOPs, and thu
 - Send **completion notice** to the initial requester. Include:
    - **Summary of the updated systems** (i.e., the ones where data was withdrawn). 
    - If the scope was partial withdrawal, provide the **new dataset version ID** (i.e., the one without the withdrawn part).
+   - If the initial requester was not the data controller, send **completion notice** to the data controller as well, for them to notify data recipients as per [GDPR Article 19](https://gdpr-info.eu/art-19-gdpr).
 - **Close the ``dataset-withdrawal-request`` ticket**, documenting the work done and outcome.
 
 ### 9. References

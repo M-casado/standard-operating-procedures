@@ -49,6 +49,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | FDP              | FAIR Data Point                                                         |
 | FEGA             | Federated EGA                                                           |
 | FTP              | File Transfer Protocol                                                  |
+| GA4GH            | Global Alliance for Genomics and Health                                 |
 | GDI              | European Genomic Data Infrastructure                                    |
 | GDI-CO           | GDI Project Management Team (GDI coordinators)                          |
 | GDPR             | General Data Protection Regulation                                      |
@@ -105,8 +106,10 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | **Term**         | **Definition**                                                         |
 |------------------|-------------------------------------------------------------------------|
 | API              | Application Programming Interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. |
+| Beacon           |A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
 | CHANGELOG        | Log or record of all notable changes made to a project                 |
 | Data controller  |The legal owner or organisation that determines the purposes and means of processing the dataset and can authorise its withdrawal|
+| Dataset version  |A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 | FitSM            | Standards for lightweight IT Services Management; developed initially through The FedSM Project, funded by the European Commission, now maintained by ITEMO (<https://www.fitsm.eu/>) |
 | Hard-deletion    |Complete, irreversible erasure of the data from all storage media so it cannot be recovered|
 | JIRA             | is a software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
@@ -118,7 +121,9 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | Soft-deletion    |Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
 | Ticket           |A ticket is a recorded request or issue submitted for support, tracking, or resolution. It serves as a unit of work that enables communication and accountability throughout its lifecycle.|
 | Ticket Classification | Process of categorizing tickets based on their type, urgency, or topic to ensure efficient handling and appropriate routing.  |
+| Tombstone record |A persistent landing page/metadata record kept in place of a removed dataset, providing citation and identifier details and stating the item is no longer available|
 | Virtual Helpdesk | Centralized, digital support service that coordinates and responds to incoming requests across the network. In GDI, it complements Node helpdesks by offering cross-node guidance, escalation, and harmonization of support efforts.  |
+| Withdrawal       |An exceptional action where a dataset (or research object) is removed from public access, typically retaining its persistent identifier and replacing access with a notice (often via a tombstone page/record)|
 | XML              | Extensible Markup Language is a markup language and file format for storing, transmitting, and reconstructing data. |
 | YYYYMMDD         | Date format in year-month-day                                          |
 
