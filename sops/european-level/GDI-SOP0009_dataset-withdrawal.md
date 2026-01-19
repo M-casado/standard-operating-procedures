@@ -41,6 +41,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | GA4GH | Global Alliance for Genomics and Health |
 | GDI | Genomic Data Infrastructure |
 | GDPR | General Data Protection Regulation |
+| HD | Helpdesk |
 | ID | Identifier |
 | IdP | Identity Provider |
 | ISM | Information Service Management |
@@ -67,6 +68,7 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 |Dataset version|A specific released state of a dataset identified by a version label/number, used to distinguish minor or major changes between releases|
 |Beacon|A web-accessible service implementing the GA4GH Beacon specification, enabling federated discovery (and sometimes retrieval) of genomic variant and related biomedical data across distributed resources|
 |Hard-deletion|Complete data removal from primary systems, plus documented handling of backups according to retention policy, with escalation if the request requires something stricter|
+|JIRA| Software product developed by Atlassian that allows bug tracking, issue tracking and agile project management. |
 |Requester|The person that initiates the request to the VHD for the dataset to be withdrawn|
 |Soft-deletion|Data is marked as withdrawn and made inaccessible to users but retained internally for audit or limited-term retention|
 |Tombstone record|A persistent landing page/metadata record kept in place of a removed dataset, providing citation and identifier details and stating the item is no longer available|
