@@ -23,6 +23,7 @@
 ### 1. Document History
 | Template Version | Instance version | Author(s) | Description of changes       | Date       |
 |---------|-----------|-----------|------------------------------|------------|
+| ``v1.0.1`` |  | Marcos Casado Barbero | Address PR review comments | 2026.03.10 |
 | ``v1`` |  | Marcos Casado Barbero | Draft SOP | 2026.01.16 |
 
 ### 2. Glossary
@@ -34,7 +35,6 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | DPO | Data Protection Officer |
 | EBI | European Bioinformatics Institute |
 | EDIC | European Digital Infrastructure Consortium |
-| EGA | European Genome-phenome Archive |
 | EMBL | European Molecular Biology Laboratory |
 | FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
@@ -89,7 +89,7 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI). Requests can be initiated by many parties, but execution requires controller authorisation or a valid legal basis and governance decision. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
 
 ### 5. Scope
-This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component (i.e., storage and interfaces), including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Portals** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)).
+This procedure applies to **all datasets within the GDI**, regardless of which system or node they were originally submitted to. It covers datasets submitted via any GDI component (i.e., storage and interfaces), including but not limited to: the **GDI Beacon network**, the **GDI User Portal catalog**, and **FAIR Data Points** (FDP) under GDI (see more details at [Step 7](#87-per-system-dataset-withdrawal)).
 
 As a European-level SOP, it is designed to be directly implementable by all GDI nodes and centrally operated GDI services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
 
@@ -98,7 +98,7 @@ It encompasses **data withdrawals triggered by a requester** (including data sub
 _Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems (see [Step 7](#87-per-system-dataset-withdrawal)).
 
 ### 6. Introduction and Background Information
-The GDI is a federated network of national and European services that together enable discovery, access, and analysis of genomics and related health data. Because datasets may be copied, indexed, or exposed by multiple GDI components (e.g., GDI Storage, Beacon, FAIR Data Portals), withdrawing a dataset requires a coordinated cross-system process. This SOP supplies that process.
+The GDI is a federated network of national and European services that together enable discovery, access, and analysis of genomics and related health data. Because datasets may be copied, indexed, or exposed by multiple GDI components (e.g., GDI Storage, Beacon, FDP), withdrawing a dataset requires a coordinated cross-system process. This SOP supplies that process.
 
 Legal and ethical obligations, like the General Data Protection Regulation (GDPR) [art. 17 "Right to erasure"](https://gdpr-info.eu/art-17-gdpr/), may require GDI to act without undue delay once the data controller has made a decision. Note that the right to erasure is not absolute and may be limited, for example for scientific research. The procedure defined here ensures:
 - The dataset controller's decision is executed promptly and uniformly.
@@ -282,7 +282,7 @@ Given that the request is valid and the requester has authority to withdraw the 
    - 💡 It may be the case that you yourself may be part of the applicable GDI node, and thus have **both the VHD and NHD Officer roles** ([step 5](#85-assign-withdrawal-response-team)) in this SOP.
 - **Notify corresponding GDI Node Helpdesk (NHD) of the valid dataset withdrawal request**. The NHD officer(s) will be the one following through the actual dataset withdrawal at their respective nodes. Notification may vary depending on the system used, for it to be as straightforward as possible:
    - Ideally, you would **create a ticket** at the GDI node's operation ticket management system (e.g., JIRA). Add to this ticket as much information as necessary (e.g., screenshots, initial request details...) for the NHD Officer to follow through with the request at [step 5](#85-assign-withdrawal-response-team).
-      - Create it with **type** ``dataset-withdrawal``.
+      - Create it with **type** ``dataset-withdrawal`` (see [GDI-SOP0008](./GDI-SOP0008_node-helpdesk-ticket-classification.md)).
       - **Link it** to the initial ``dataset-withdrawal-request`` VHD ticket that was generated with the requester communication. As per the used system, this link should imply that the ``dataset-withdrawal-request`` ticket "is blocked by" this new ``dataset-withdrawal`` ticket.
       - Flag its ``priority`` as ``High``.
    - In the **absence** of this ticketing system, you may notify the GDI node's HD through **email** using the following template. 
