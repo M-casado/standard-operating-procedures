@@ -33,6 +33,7 @@
 
 | Template Version | Instance version | Author(s) | Description of changes | Date |
 |---|---|---|---|---|
+| ``v1.0.1``  |  | Marcos Casado Barbero | Added dataset withdrawal tags from SOP0009 (see [PR](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/62#discussion_r2891451676)) | 2026.03.10 |
 |  ``v1.0.0``  |  | Elisavet Torstensson,  Silvia Bahena| Updated text formatting and clarified key points based on reviews (see [PR](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/49)) | 2025.04.14 |
 |  ``v0.0.0``  |  | Elisavet Torstensson, Mattias Strömberg, Silvia Bahena| Created the first version of the SOP | 2025.02.04 |
 
