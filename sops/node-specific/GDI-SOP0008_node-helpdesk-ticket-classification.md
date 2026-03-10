@@ -274,7 +274,7 @@ Each node is encouraged to define and adapt its own set of tags based on the spe
 ### Issue Tracking
 | Tag | Definition |
 |-----|------------|
-| JIRA | To be used when you need to create a JIRA ticket for an issue that Helpdesk cannot resolve and requires dev involment |
+| JIRA | To be used when you need to create a JIRA ticket for an issue that Helpdesk cannot resolve and requires dev involvement |
 ### Other
 | Tag | Definition |
 |-----|------------|
@@ -312,6 +312,11 @@ Each node is encouraged to define and adapt its own set of tags based on the spe
 | Study/dataset release | Releasing a study/dataset to live site |
 | Submitter portal issue | There is an issue with the Submitter Portal |
 | Uploader issue | User is having issue with Aspera or FTP upload |
+### Data withdrawal
+| Tag | Definition |
+|-----|------------|
+| dataset-withdrawal-request | To be used when a user requests to withdraw a dataset from GDI |
+| dataset-withdrawal | To be used for tickets related to dataset withdrawal |
 ### User Support
 | Tag | Definition |
 |-----|------------|
