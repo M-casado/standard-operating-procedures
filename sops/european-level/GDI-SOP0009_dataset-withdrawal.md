@@ -282,7 +282,7 @@ Given that the request is valid and the requester has authority to withdraw the 
    - 💡 It may be the case that you yourself may be part of the applicable GDI node, and thus have **both the VHD and NHD Officer roles** ([step 5](#85-assign-withdrawal-response-team)) in this SOP.
 - **Notify corresponding GDI Node Helpdesk (NHD) of the valid dataset withdrawal request**. The NHD officer(s) will be the one following through the actual dataset withdrawal at their respective nodes. Notification may vary depending on the system used, for it to be as straightforward as possible:
    - Ideally, you would **create a ticket** at the GDI node's operation ticket management system (e.g., JIRA). Add to this ticket as much information as necessary (e.g., screenshots, initial request details...) for the NHD Officer to follow through with the request at [step 5](#85-assign-withdrawal-response-team).
-      - Create it with **type** ``dataset-withdrawal`` (see [GDI-SOP0008](./GDI-SOP0008_node-helpdesk-ticket-classification.md)).
+      - Create it with **type** ``dataset-withdrawal`` (see [GDI-SOP0008](../node-specific/GDI-SOP0008_node-helpdesk-ticket-classification.md)).
       - **Link it** to the initial ``dataset-withdrawal-request`` VHD ticket that was generated with the requester communication. As per the used system, this link should imply that the ``dataset-withdrawal-request`` ticket "is blocked by" this new ``dataset-withdrawal`` ticket.
       - Flag its ``priority`` as ``High``.
    - In the **absence** of this ticketing system, you may notify the GDI node's HD through **email** using the following template. 
