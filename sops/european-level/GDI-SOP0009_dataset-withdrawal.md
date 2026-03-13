@@ -246,6 +246,7 @@ The communication should **include**:
 - The **reasoning** behind the evaluation.
 - A **request** towards the requester to provide **further details** or **clarify elements** of the request, if applicable. 
    - This is extremely relevant if the request was rejected because it did not come from the data controller, but a data subject instead. In this case, you should refer the data subject to the data controller for them to open the request on their behalf.
+- A **deadline of 15 days** for the requester to respond with the requested information or clarifications before the request ticket is closed. Phrase this in a way that encourages the requester to respond, rather than dismissing it (e.g., _"Please provide the requested information within 15 days so we can proceed with your request. If we do not receive a response by then, we will assume you wish to withdraw your request and will close the ticket."_).
 
 You must **log the communication** appropriately (e.g., CC relevant lists or update ticket status).
 
