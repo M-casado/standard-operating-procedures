@@ -93,7 +93,7 @@ This procedure applies to **all datasets within the GDI**, regardless of which s
 
 As a European-level SOP, it is designed to be directly implementable by all GDI nodes and centrally operated GDI services. The SOP addresses both **full dataset withdrawals** (removing an entire dataset from GDI) and **partial withdrawals** (removing or retracting a portion of a dataset, such as specific individuals' data). This SOP focuses on the **overarching process and coordination** required to withdraw the data across the GDI ecosystem.
 
-It encompasses **data withdrawals triggered by a requester** (including data subjects). Note that execution must be authorised by the relevant data controller, or otherwise have a valid legal basis and governance decision. Examples of these include: (1) data subjects requesting withdrawal based on their rights; and (2) controllers needing to withdraw data (without an explicit user requesting it) to comply with regulations.
+It encompasses **data withdrawals triggered by a requester** (including data subjects). Note that execution must be authorised by the relevant data controller, or otherwise have a valid legal basis and governance decision. For example, controllers needing to (1) withdraw data (without an explicit user requesting it) to comply with regulations, or (2) withdraw data due to a explicit request from a data subject.
 
 _Out of Scope_: This SOP does **not** cover the initial amendments during submission of datasets or routine data updates. Any system-specific technical steps for deletion (e.g., how to remove metadata from a GDI Beacon) are referenced but detailed in separate SOPs for those systems (see [Step 7](#87-per-system-dataset-withdrawal)).
 
