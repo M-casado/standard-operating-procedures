@@ -82,8 +82,9 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 |------------|-----------------|-----------------|--------------|
 | Author     |Marcos Casado Barbero|Task 4.3 member|EMBL-EBI|
 | Reviewer   |Silvia Bahena|Task 4.3 member|EMBL-EBI|
-| Approver   |Kjell Petersen|Task 4.3 member|University of Bergen|
-| Authorizer |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
+| Reviewer   |Kjell Petersen|Task 4.3 member|University of Bergen|
+| Approver |Gabriele Rinck|Task 4.3 member|EMBL-EBI|
+| Authorizer | |Management Board||
 
 ### 4. Purpose
 The purpose of this SOP is to define the process for withdrawing a dataset from the European Genomic Data Infrastructure (GDI). Requests can be initiated by many parties, but execution requires controller authorisation or a valid legal basis and governance decision. This procedure ensures the removal is propagated swiftly and consistently across all services while meeting legal, ethical, and audit requirements. With it, GDI nodes protect data-subject rights, prevent continued exposure of withdrawn data, and maintain a transparent, documented record of the action.
@@ -288,7 +289,7 @@ Given that the request is valid and the requester has authority to withdraw the 
       - Flag its ``priority`` as ``High``.
    - In the **absence** of this ticketing system, you may notify the GDI node's HD through **email** using the following template. 
       - Include relevant stakeholders from within GDI (_not the requester!_) in CC, like the OC (``gdi-oc [at] elixir-europe.org``) and SDPC (``gdi-sdpc [at] elixir-europe.org``).
-      - Attach to the email any **supporting documentation** (e.g., verification of authority, screenshots, initial request...).
+      - Attach to the email any **supporting documentation** (e.g., verification of authority, screenshots, initial request...). ⚠️ To minimise the **risk of removing the wrong subset of data** (e.g., copy-pasting the wrong id), ensure that the **initial request** (including the dataset identifier) is included in the communication, either as an attachment or in the body of the email.
 ````
 To: <Corresponding-GDI-node-Helpdesk>
 CC: gdi-sdpc [at] elixir-europe.org, gdi-oc [at] elixir-europe.org
@@ -363,7 +364,7 @@ Now that the dataset withdrawal request has been logged and is being processed, 
 - **Notify each appointed TL** of the dataset withdrawal request and their responsibilities. Notification may vary depending on the system used, for it to be as straightforward as possible:
    - Ideally, you would **create a ticket** at your GDI node's operation ticket management system (e.g., JIRA). Add to this ticket as much information as necessary (e.g., screenshots, initial request details...) for the TLs to follow through with the request at [step 7](#87-per-system-dataset-withdrawal).
    - In the **absence** of this ticketing system, you may notify the TLs through **email** using the following template.
-      - Attach to the email any **supporting documentation** (e.g., verification of authority, screenshots, initial request...).
+      - Attach to the email any **supporting documentation** (e.g., verification of authority, screenshots, initial request...). ⚠️ To minimise the **risk of removing the wrong subset of data** (e.g., copy-pasting the wrong id), ensure that the **initial request** (including the dataset identifier) is included in the communication, either as an attachment or in the body of the email.
 ````
 To: <Appointed-TLs>
 Subject: [<dataset-withdrawal TICKET_ID>][GDI SOP0009] Dataset withdrawal for <GDI_SYSTEM>
