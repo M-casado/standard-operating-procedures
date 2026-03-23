@@ -33,6 +33,7 @@
 
 | Template Version | Instance version | Author(s) | Description of changes | Date |
 |---|---|---|---|---|
+| ``v1.0.1``  |  | Marcos Casado Barbero | Added dataset withdrawal tags from SOP0009 (see [PR](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/62#discussion_r2891451676)) | 2026.03.10 |
 |  ``v1.0.0``  |  | Elisavet Torstensson,  Silvia Bahena| Updated text formatting and clarified key points based on reviews (see [PR](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/49)) | 2025.04.14 |
 |  ``v0.0.0``  |  | Elisavet Torstensson, Mattias Strömberg, Silvia Bahena| Created the first version of the SOP | 2025.02.04 |
 
@@ -274,7 +275,7 @@ Each node is encouraged to define and adapt its own set of tags based on the spe
 ### Issue Tracking
 | Tag | Definition |
 |-----|------------|
-| JIRA | To be used when you need to create a JIRA ticket for an issue that Helpdesk cannot resolve and requires dev involment |
+| JIRA | To be used when you need to create a JIRA ticket for an issue that Helpdesk cannot resolve and requires dev involvement |
 ### Other
 | Tag | Definition |
 |-----|------------|
@@ -312,6 +313,11 @@ Each node is encouraged to define and adapt its own set of tags based on the spe
 | Study/dataset release | Releasing a study/dataset to live site |
 | Submitter portal issue | There is an issue with the Submitter Portal |
 | Uploader issue | User is having issue with Aspera or FTP upload |
+### Data withdrawal
+| Tag | Definition |
+|-----|------------|
+| dataset-withdrawal-request | To be used when a user requests to withdraw a dataset from GDI |
+| dataset-withdrawal | To be used for tickets related to dataset withdrawal |
 ### User Support
 | Tag | Definition |
 |-----|------------|
