@@ -92,6 +92,7 @@ The following table defines the abbreviations and terms relevant to GDI SOPs.
 | TL               | Technical Lead                                                          |
 | TODO             | A list of pending tasks                                                 |
 | UI               | User Interface                                                          |
+| URI              | Uniform Resource Identifier                                             |
 | URL              | Uniform Resource Locator                                                |
 | UU               | University of Uppsala                                                   |
 | UX               | User experience                                                         |
