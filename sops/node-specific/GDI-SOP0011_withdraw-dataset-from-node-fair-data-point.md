@@ -36,17 +36,12 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | -- | -- |
 | FDP | FAIR Data Point |
 | GDI | European Genomic Data Infrastructure |
-| PID | Persistent Identifier |
+| PID | Permanent Identifier |
 | SOP | Standard Operating Procedure |
-| URI | Uniform Resource Identifier |
 | VHD | Virtual Helpdesk |
 
 | Term | Definition |
 | -- | -- |
-| Distribution | A specific access representation of a dataset in the FAIR Data Point, such as a download, landing page, or service endpoint. |
-| FAIR Data Point | The node-managed metadata catalogue used to publish and maintain dataset and distribution descriptions. |
-| HealthDCAT-AP | The health-focused application profile used to structure dataset metadata, including controlled status values. |
-| Tombstone | A minimal metadata record that remains visible after withdrawal to preserve traceability and indicate that the dataset or distribution has been withdrawn. |
 | Withdrawal | A lifecycle state indicating that a dataset or distribution is no longer offered for normal use through the FAIR Data Point. |
 
 ### 3. Roles and Responsibilities
@@ -78,7 +73,7 @@ In this SOP, withdrawal is expressed using `adms:status`. At dataset level, use 
 
 For a full withdrawal, set the dataset and all linked distributions to `Withdrawn`. For a distribution-specific withdrawal, set only the affected distributions to `Withdrawn`. Withdrawn records should remain visible as tombstones when the node implementation or governance model requires traceability.
 
-If the user interface shows labels instead of URIs, select `Withdrawn`. If the FAIR Data Point also exposes a generic catalogue-record workflow status, do not use that field as the withdrawal instruction in this SOP. This SOP uses the dataset and distribution lifecycle status fields only. For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
+If the user interface shows labels instead of full vocabulary URLs, select `Withdrawn`. If the FAIR Data Point also exposes a generic catalogue-record workflow status, do not use that field as the withdrawal instruction in this SOP. This SOP uses the dataset and distribution lifecycle status fields only. For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
 
 ### 7. Summary or Context Diagram
 
