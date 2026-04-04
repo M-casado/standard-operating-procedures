@@ -25,7 +25,7 @@
 
 | Template Version | Instance version | Author(s) | Description of changes | Date |
 | -- | -- | -- | -- | -- |
-| `v1` |  | Hans-Christian van der Werf | First markdown template version of the SOP for issue [#63](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63), based on the approved draft and PDF review copy. | `2026.03.26` |
+| `v1` |  | Hans-Christian van der Werf | First markdown template version of the SOP for issue [#63](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63), based on the approved draft and reviewed copy. | `2026.03.26` |
 | `v0` |  | Marcos Casado Barbero | Created the initial SOP request and draft content for dataset withdrawal from a Node FAIR Data Point. | `2026.03.05` |
 
 ### 2. Glossary
@@ -34,10 +34,19 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 
 | Abbreviation | Description |
 | -- | -- |
+| API | Application Programming Interface |
+| EBI | European Bioinformatics Institute |
+| EMBL | European Molecular Biology Laboratory |
+| FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
 | GDI | European Genomic Data Infrastructure |
+| ISM | Information Service Management |
+| ORR | Organisational Roles and Responsibilities |
 | PID | Permanent Identifier |
+| PR | Pull Request |
+| RI | Research Infrastructure |
 | SOP | Standard Operating Procedure |
+| TB | Top to Bottom |
 | VHD | Virtual Helpdesk |
 
 | Term | Definition |
@@ -69,16 +78,16 @@ A full withdrawal means that the dataset and all linked distributions are marked
 
 A node's FAIR Data Point is often the first public-facing catalogue where a dataset becomes discoverable. Without a standard withdrawal procedure, datasets or distributions that should no longer be offered may remain visible or accessible, undermining governance, compliance, and user trust. This SOP ensures that nodes apply a consistent and auditable soft withdrawal process in the FDP while keeping a tombstone where appropriate.
 
-In this SOP, withdrawal is expressed using `adms:status`. At dataset level, use the EU Dataset Status vocabulary and set the value to [http://publications.europa.eu/resource/authority/dataset-status/WITHDRAWN](http://publications.europa.eu/resource/authority/dataset-status/WITHDRAWN). At distribution level, use the EU Distribution Status vocabulary and set the value to [http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN](http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN).
+In this SOP, withdrawal is expressed using `adms:status`. At dataset level, use the European Union Dataset Status vocabulary and set the value to [http://publications.europa.eu/resource/authority/dataset-status/withdrawn](http://publications.europa.eu/resource/authority/dataset-status/withdrawn). At distribution level, use the European Union Distribution Status vocabulary and set the value to [http://publications.europa.eu/resource/authority/distribution-status/withdrawn](http://publications.europa.eu/resource/authority/distribution-status/withdrawn).
 
 For a full withdrawal, set the dataset and all linked distributions to `Withdrawn`. For a distribution-specific withdrawal, set only the affected distributions to `Withdrawn`. Withdrawn records should remain visible as tombstones when the node implementation or governance model requires traceability.
 
-If the user interface shows labels instead of full vocabulary URLs, select `Withdrawn`. If the FAIR Data Point also exposes a generic catalogue-record workflow status, do not use that field as the withdrawal instruction in this SOP. This SOP uses the dataset and distribution lifecycle status fields only. For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
+If the user interface shows labels instead of full vocabulary links, select `Withdrawn`. If the FAIR Data Point also exposes a generic catalogue-record workflow status, do not use that field as the withdrawal instruction in this SOP. This SOP uses the dataset and distribution lifecycle status fields only. For a broader context of GDI SOPs, please refer to the [Charter](../../docs/GDI-SOP_charter.md#4-introduction).
 
 ### 7. Summary or Context Diagram
 
 ```mermaid
-flowchart TD
+flowchart TB
     request["Approved withdrawal request"]
     find["Locate dataset record in FDP"]
     dist["Identify linked distributions"]
@@ -88,7 +97,7 @@ flowchart TD
     save["Save updated records in FDP"]
     verify["Verify FDP visibility and tombstone"]
     harvest["Central portal harvests updated metadata automatically"]
-    log["Log action and identifier relations"]
+    log["Log action"]
     report["Report completion in the withdrawal request"]
 
     request --> find --> dist --> scope
@@ -103,7 +112,7 @@ flowchart TD
 
 | Step identifier | When | Who |
 |:--|:--|:--|
-| 1 | When a dataset withdrawal has been approved or formally requested under the overarching withdrawal process described in issue [#55](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/55) and PR [#62](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/62). | Node FAIR Data Point maintainer or designated metadata curator |
+| 1 | When a dataset withdrawal has been approved or formally requested under the overarching withdrawal process described in issue [#55](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/55) and pull request [#62](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/62). | Node FAIR Data Point maintainer or designated metadata curator |
 
 As the node FAIR Data Point maintainer or designated metadata curator, confirm that the withdrawal request is valid and approved before changing metadata in the FAIR Data Point. Record the dataset identifier to be used as the primary lookup key. Record the dataset title only as an additional verification check.
 
@@ -121,7 +130,7 @@ Search the FAIR Data Point for the dataset using the recorded identifier as the 
 |:--|:--|:--|
 | 3 | After step 2. | Node FAIR Data Point maintainer or designated metadata curator |
 
-Identify all linked distributions associated with the dataset, including API endpoints, landing pages, and download URLs where applicable. Determine whether the request concerns:
+Identify all linked distributions associated with the dataset, including service endpoints, landing pages, and download links where applicable. Determine whether the request concerns:
 
 - a full withdrawal, meaning the dataset and all linked distributions
 - a distribution-specific withdrawal, meaning only one or more affected distributions
@@ -171,12 +180,12 @@ Report completion in the requestor.
 | Reference | Description |
 | -- | -- |
 | [1](../../docs/GDI-SOP_charter.md) | European GDI - SOP Charter (including Glossary) |
-| [2](../../docs/GDI-SOP_information-service-management.md) | European GDI - Procedures for Information Service Management (ISM) for SOPs |
-| [3](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities (ORR) |
+| [2](../../docs/GDI-SOP_information-service-management.md) | European GDI - Procedures for Information Service Management for SOPs |
+| [3](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities |
 | [4](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/55) | GDI SOP request for the overarching dataset withdrawal process |
 | [5](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/pull/62) | Pull request describing the overarching withdrawal process triggered before this SOP |
-| [6](https://healthdataeu.pages.code.europa.eu/healthdcat-ap/releases/release-6/) | HealthDCAT-AP release 6, including catalogue record and distribution status guidance |
-| [7](https://github.com/Health-RI/health-ri-metadata/blob/develop/README.md) | Health-RI metadata README, dataset and distribution `adms:status` usage |
-| [8](https://publications.europa.eu/resource/authority/dataset-status/WITHDRAWN) | EU Dataset Status vocabulary, `WITHDRAWN` |
-| [9](https://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN) | EU Distribution Status vocabulary, `WITHDRAWN` |
-| [10](https://github.com/GenomicDataInfrastructure/gdi-metadata) | GDI metadata model / GDI SHACL profile |
+| [6](https://healthdataeu.pages.code.europa.eu/healthdcat-ap/releases/release-6/) | Health data catalogue application profile release 6, including catalogue record and distribution status guidance |
+| [7](https://github.com/Health-RI/health-ri-metadata/blob/develop/README.md) | Metadata documentation from the Health Research Infrastructure project, including dataset and distribution `adms:status` usage |
+| [8](https://publications.europa.eu/resource/authority/dataset-status/withdrawn) | European Union Dataset Status vocabulary entry for `Withdrawn` |
+| [9](https://publications.europa.eu/resource/authority/distribution-status/withdrawn) | European Union Distribution Status vocabulary entry for `Withdrawn` |
+| [10](https://github.com/GenomicDataInfrastructure/gdi-metadata) | GDI metadata model and validation profile |
