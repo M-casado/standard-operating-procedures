@@ -1,13 +1,13 @@
 # European GDI - Withdraw dataset from Node FAIR Data Point
 
-| Metadata | Value |
-| -- | -- |
-| Template SOP number | `GDI-SOP0011` |
-| Template SOP version | `v1` |
-| Topic | Technical infrastructure & software development |
-| Template SOP Type | Node-specific SOP |
-| GDI Node |  |
-| Instance version |  |
+| Metadata             | Value                                                                 |
+| -------------------- | --------------------------------------------------------------------- |
+| Template SOP number  | `GDI-SOP0011`                                                         |
+| Template SOP version | `v1`                                                                  |
+| Topic                | Technical infrastructure & software development                       |
+| Template SOP Type    | Node-specific SOP                                                      |
+| GDI Node             |                                                                       |
+| Instance version     |                                                                       |
 
 ## Index
 
@@ -23,39 +23,39 @@
 
 ### 1. Document History
 
-| Template Version | Instance version | Author(s) | Description of changes | Date |
-| -- | -- | -- | -- | -- |
-| `v1` |  | Hans-Christian van der Werf | First markdown template version of the SOP for issue [#63](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63), based on the approved draft and reviewed copy. | `2026.03.26` |
-| `v0` |  | Marcos Casado Barbero | Created the initial SOP request and draft content for dataset withdrawal from a Node FAIR Data Point. | `2026.03.05` |
+| Template Version | Instance version | Author(s)                   | Description of changes                                                                                                                                               | Date         |
+| ---------------- | ---------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `v1`             |                  | Hans-Christian van der Werf | First markdown template version of the SOP for issue [#63](https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63), based on the approved draft and reviewed copy. | `2026.03.26` |
+| `v0`             |                  | Marcos Casado Barbero       | Created the initial SOP request and draft content for dataset withdrawal from a Node FAIR Data Point.                                                                 | `2026.03.05` |
 
 ### 2. Glossary
 
 Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_charter.md).
 
-| Abbreviation | Description |
-| -- | -- |
-| EMBL | European Molecular Biology Laboratory |
-| EBI | European Bioinformatics Institute |
-| FAIR | Findability, Accessibility, Interoperability and Reusability |
-| FDP | FAIR Data Point |
-| GDI | European Genomic Data Infrastructure |
-| SOP | Standard Operating Procedure |
-| VHD | Virtual Helpdesk |
+| Abbreviation  | Description                                       |
+| ------------- | ------------------------------------------------- |
+| EMBL          | European Molecular Biology Laboratory            |
+| EBI           | European Bioinformatics Institute                 |
+| FAIR          | Findability, Accessibility, Interoperability and Reusability |
+| FDP           | FAIR Data Point                                   |
+| GDI           | European Genomic Data Infrastructure              |
+| SOP           | Standard Operating Procedure                      |
+| VHD           | Virtual Helpdesk                                  |
 
-| Term | Definition |
-| -- | -- |
+| Term       | Definition                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
 | Withdrawal | A lifecycle state indicating that a dataset or distribution is no longer offered for normal use through the FAIR Data Point. |
 
 ### 3. Roles and Responsibilities
 
 See qualifications and responsibilities of the roles at the [**Organisational Roles and Responsibilities**](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md) document.
 
-| Role | Full name | GDI/node role | Organisation |
-| -- | -- | -- | -- |
-| Author | Hans-Christian van der Werf | SOP author and Task 4.3 contributor | Health-RI |
-| Reviewer | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| Approver | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
-| Authorizer | Management Board | Authorizer according to GDI SOP governance | GDI |
+| Role       | Full name                   | GDI/node role                                    | Organisation                          |
+| ---------- | --------------------------- | ------------------------------------------------ | ------------------------------------- |
+| Author     | Hans-Christian van der Werf | SOP author and Task 4.3 contributor              | Health-RI                             |
+| Reviewer   | Marcos Casado Barbero       | Task 4.3 member                                  | EMBL-EBI                              |
+| Approver   | Gabriele Rinck              | Task 4.3 member                                  | EMBL-EBI                              |
+| Authorizer | Management Board            | Authorizer according to GDI SOP governance       | GDI                                   |
 
 ### 4. Purpose
 
@@ -108,8 +108,8 @@ flowchart TD
 #### 8.1. Confirm withdrawal request and identify dataset
 
 | Step identifier | When | Who |
-|:--|:--|:--|
-| 1 | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](../european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal). | Node FAIR Data Point maintainer or designated metadata curator |
+| :-------------- | :------------------------------------------------------------------ | :-------------------------------------- |
+| `1`             | When a dataset withdrawal request has been approved under the overarching withdrawal process described in [GDI-SOP0009 dataset withdrawal](../european-level/GDI-SOP0009_dataset-withdrawal.md#87-per-system-dataset-withdrawal). | Node FAIR Data Point maintainer or designated metadata curator |
 
 As the node FAIR Data Point maintainer or designated metadata curator, confirm that the incoming request package is complete before changing metadata in the FAIR Data Point. Check that it includes:
 
@@ -125,8 +125,8 @@ Record the dataset identifier to be used as the primary lookup key. Record the d
 #### 8.2. Check presence of the dataset in the FAIR Data Point
 
 | Step identifier | When | Who |
-|:--|:--|:--|
-| 2 | After successful completion of [Step 1](#81-confirm-withdrawal-request-and-identify-dataset). | Node FAIR Data Point maintainer or designated metadata curator |
+| :-------------- | :------------------------------------------------------------------ | :-------------------------------------- |
+| `2`             | After successful completion of [Step 1](#81-confirm-withdrawal-request-and-identify-dataset). | Node FAIR Data Point maintainer or designated metadata curator |
 
 Search the FAIR Data Point for the dataset using the recorded identifier as the primary lookup key. Use the dataset title only as an additional check that the correct record has been found.
 
@@ -136,8 +136,8 @@ Search the FAIR Data Point for the dataset using the recorded identifier as the 
 #### 8.3. Identify linked distributions and assess withdrawal scope
 
 | Step identifier | When | Who |
-|:--|:--|:--|
-| 3 | After step 2. | Node FAIR Data Point maintainer or designated metadata curator |
+| :-------------- | :--------------------------------------- | :-------------------------------------- |
+| `3`             | After step 2. | Node FAIR Data Point maintainer or designated metadata curator |
 
 Identify all linked distributions associated with the dataset, including service endpoints, landing pages, and download links where applicable. Follow the withdrawal scope already approved in the incoming request:
 
@@ -149,8 +149,8 @@ Identify all linked distributions associated with the dataset, including service
 #### 8.4. Apply soft withdrawal status
 
 | Step identifier | When | Who |
-|:--|:--|:--|
-| 4 | After step 3. | Node FAIR Data Point maintainer or designated metadata curator |
+| :-------------- | :--------------------------------------- | :-------------------------------------- |
+| `4`             | After step 3. | Node FAIR Data Point maintainer or designated metadata curator |
 
 If the withdrawal is full:
 
@@ -175,8 +175,8 @@ Example operational instruction: go to FAIR Data Point, open the relevant record
 #### 8.5. Verify, log, and report completion
 
 | Step identifier | When | Who |
-|:--|:--|:--|
-| 5 | After step 4. | Node FAIR Data Point maintainer or designated metadata curator |
+| :-------------- | :--------------------------------------- | :-------------------------------------- |
+| `5`             | After step 4. | Node FAIR Data Point maintainer or designated metadata curator |
 
 Verify in the FAIR Data Point that the withdrawal result matches the requested scope:
 
@@ -192,7 +192,7 @@ Report completion back to the GDI Virtual Helpdesk so that requester communicati
 ### 9. References
 
 | Reference | Description |
-| -- | -- |
+| --------- | ----------- |
 | [1](../../docs/GDI-SOP_charter.md) | European GDI - SOP Charter (including Glossary) |
 | [2](../../docs/GDI-SOP_information-service-management.md) | European GDI - Procedures for Information Service Management for SOPs |
 | [3](../../docs/GDI-SOP_organisational-roles-and-responsibilities.md) | European GDI - Organisational Roles and Responsibilities |
