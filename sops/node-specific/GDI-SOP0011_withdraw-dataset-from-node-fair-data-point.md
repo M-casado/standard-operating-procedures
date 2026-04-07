@@ -56,8 +56,8 @@ See qualifications and responsibilities of the roles at the [**Organisational Ro
 | -- | -- | -- | -- |
 | Author | Hans-Christian van der Werf | SOP author and Task 4.3 contributor | Health-RI |
 | Reviewer | Marcos Casado Barbero | Task 4.3 member | EMBL-EBI |
-| Approver | To be assigned | Approver according to GDI SOP governance | To be assigned |
-| Authorizer | To be assigned | Authorizer according to GDI SOP governance | To be assigned |
+| Approver | Gabriele Rinck | Task 4.3 member | EMBL-EBI |
+| Authorizer | Management Board | Authorizer according to GDI SOP governance | GDI |
 
 ### 4. Purpose
 
