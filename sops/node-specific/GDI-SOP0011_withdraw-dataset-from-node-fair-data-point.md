@@ -39,8 +39,6 @@ Find GDI SOPs common Glossary at the [**charter document**](../../docs/GDI-SOP_c
 | FAIR | Findability, Accessibility, Interoperability and Reusability |
 | FDP | FAIR Data Point |
 | GDI | European Genomic Data Infrastructure |
-| PID | Permanent Identifier |
-| RI | Research Infrastructure |
 | SOP | Standard Operating Procedure |
 | VHD | Virtual Helpdesk |
 
@@ -128,7 +126,7 @@ Record the dataset identifier to be used as the primary lookup key. Record the d
 
 | Step identifier | When | Who |
 |:--|:--|:--|
-| 2 | After step 1. | Node FAIR Data Point maintainer or designated metadata curator |
+| 2 | After successful completion of [Step 1](#81-confirm-withdrawal-request-and-identify-dataset). | Node FAIR Data Point maintainer or designated metadata curator |
 
 Search the FAIR Data Point for the dataset using the recorded identifier as the primary lookup key. Use the dataset title only as an additional check that the correct record has been found.
 
