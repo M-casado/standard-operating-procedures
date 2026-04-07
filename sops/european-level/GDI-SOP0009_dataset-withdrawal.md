@@ -435,7 +435,7 @@ To accomplish these tasks, **follow the appropriate SOP** for your specified sys
    - Beacon Browser (_#! SOP TBD_).
       - Nodes' Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/64 #!_).
    - Dataset Browser (_#! SOP TBD_).
-      - Nodes' FAIR Data Points (FDP) (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/63 #!_).
+      - Nodes' FAIR Data Points (FDP) ([`GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md`](../node-specific/GDI-SOP0011_withdraw-dataset-from-node-fair-data-point.md), soft withdrawal in node FDP metadata).
    - Allele Frequency Browser (_#! SOP TBD_).
       - Nodes' Allele Frequency Beacons (_#! SOP TBD, see https://github.com/GenomicDataInfrastructure/standard-operating-procedures/issues/65 #!_).
 - **Nodes' Secure Processing Environment** (SPE) (_#! SOP TBD_).
